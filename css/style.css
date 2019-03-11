@@ -181,7 +181,6 @@
       -ms-flex-align: center;
           align-items: center;
   margin-left: 80px;
-  margin-top: 30px;
 }
 
 .about .about__main_image img {
@@ -193,6 +192,7 @@
 
 .about .about__main_image .about__main_image--animate {
   position: absolute;
+  margin-top: 30px;
 }
 
 .specialize {
