@@ -20,7 +20,7 @@ $colorBlack: #2F2F2F
 
 .about 
     background-color: #ffffff
-    height: 450px
+    height: auto
     position: relative
     & .about__circle 
         width: 386px
@@ -88,18 +88,34 @@ $colorBlack: #2F2F2F
     & .about__main
         margin-left: 100px
     & .about__main--container
-        width: 420px
+        width: 520px
         z-index: 10
         position: absolute
         margin-top: 100px
     & .about__main_text
         color: $colorBlack
-        font-size: 30px
+        font-size: 45px
         z-index: 5
+        font-family: LatoBold
+    & .about__main_desr
+        font-family: LatoLight
+        margin-top: 15px
     & .about__main_gradient
         background: linear-gradient(#FF4E6E, #5930FF)
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
+    & .about__main_image
+        height: 650px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-left: 80px
+        img 
+            max-width: 450px
+            transform: rotate(15deg)
+            position: relative
+        & .about__main_image--animate
+            position: absolute
 .specialize
     height: auto
     padding-bottom: 100px
@@ -559,7 +575,7 @@ $colorBlack: #2F2F2F
         text-transform: uppercase
     input[type="text"],
     input[type="email"],
-    input[type="phone"]
+    input[type="tel"]
           border: none
           border-bottom: 1px solid #C5C5C5
           height: 40px
