@@ -1,0 +1,727 @@
+*
+    padding: 0
+    margin: 0
+
+$colorBlack: #2F2F2F
+
+@font-face
+    font-family: LatoLight
+    font-weight: 300
+    src: url('../fonts/Lato-Light.ttf')
+@font-face
+    font-family: LatoSemiBold
+    font-weight: 600
+    src: url('../fonts/Lato-Semibold.ttf')
+
+@font-face
+    font-family: LatoBold
+    font-weight: 900
+    src: url('../fonts/Lato-Bold.ttf')
+
+.about 
+    background-color: #ffffff
+    height: 450px
+    position: relative
+    & .about__circle 
+        width: 386px
+        height: 386px
+        border-radius: 50%
+        background: #FBFBFB
+        box-shadow: 5px 0px 60px rgba(92, 92, 92, 0.18)
+        position: absolute
+        top: -75px
+        left: -129px
+        display: flex
+        justify-content: center
+        align-items: center
+    & .about__circle_small
+        background: linear-gradient(153.86deg, #FF4949 -35.46%,   #FF7E46 91.77%)
+        box-shadow: 5px 4px 40px rgba(210, 96, 31, 0.44)
+        width: 70px
+        height: 70px
+        left: 50px
+        border-radius: 50%
+    & .about__logo
+        position: absolute
+        top: 80px
+        font-family: LatoSemiBold
+        text-transform: uppercase
+
+    & .about--container
+        max-width: 95%
+        margin: 0 auto
+    & .about__header
+        display: flex
+        flex-direction: row
+        justify-content: flex-end
+        margin-top: 25px
+    & .about__header--left
+        display: flex
+        align-items: center
+    & .about__header--right
+        display: flex
+        align-items: center
+    & .about__menu
+        display: flex
+    & .about__menu_link
+        list-style: none
+        padding: 0px 25px 0px 25px
+        a 
+            text-decoration: none
+            color: $colorBlack
+            text-transform: uppercase
+            padding-bottom: 10px
+            transition: 250ms
+            font-family: LatoSemiBold
+        a:hover
+            border-bottom: 2px solid #4FDFFF
+    & .about__btn
+        width: 180px
+        height: 50px
+        border-radius: 25px
+        border: none
+        color: #ffffff
+        text-transform: uppercase
+        background: linear-gradient(152.28deg, #6FC1FC 4.84%, #593EFF 104.93%)
+        border-radius: 100px
+        font-family: LatoBold
+    & .about__main
+        margin-left: 100px
+    & .about__main--container
+        width: 420px
+        z-index: 10
+        position: absolute
+        margin-top: 100px
+    & .about__main_text
+        color: $colorBlack
+        font-size: 30px
+        z-index: 5
+    & .about__main_gradient
+        background: linear-gradient(#FF4E6E, #5930FF)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+.specialize
+    height: auto
+    padding-bottom: 100px
+    & .specialize--container
+        max-width: 95%
+        margin: 0 auto
+    & .specialize__title
+        color: $colorBlack
+        text-align: center
+        text-transform: uppercase
+        font-family: LatoBold
+    & .specialize__title_gradient
+        background: linear-gradient(#6F81FC, #A264F3)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    & .specialize__desr
+        max-width: 550px
+        margin: 0 auto
+        text-align: center
+        margin-top: 20px
+        font-family: LatoLight
+    & .specialize__arrow
+        margin-top: 30px
+        transition: 600ms
+    & .specialize__services--container
+        display: flex
+        flex-direction: row
+        margin-top: 30px
+        justify-content: space-between
+    & .specialize__item
+        height: 200px
+        width: 280px
+        padding: 30px 35px 35px 30px
+        border-radius: 20px
+    & .specialize__item:hover
+        background: linear-gradient(#A065F3, #6D82FC)
+        cursor: pointer
+        & .specialize__item--blue
+            background: rgba(255, 255, 255, 0.2)
+        & .specialize__item--violet
+            background: rgba(255, 255, 255, 0.2)
+        & .specialize__item--green
+            background: rgba(255, 255, 255, 0.2)
+        & .specialize__item--orange
+            background: rgba(255, 255, 255, 0.2)
+        & .specialize__item_title
+            color: #fff
+        & .specialize__item_desr
+            color: #fff
+        & .specialize__item_arrow
+            color: #fff
+        svg
+            path 
+                fill: #fff
+        & .specialize__arrow
+            width: 200px
+            & .specialize__arrow_line
+                fill: #fff
+            & .specialize__arrow_triangle
+                fill: #fff
+    & .specialize__item--blue
+        height: 55px
+        width: 55px
+        background-color: rgba(84, 189, 255, 0.10)
+        display: flex
+        align-items: center
+        justify-content: center
+    & .specialize__item--violet
+        height: 55px
+        width: 55px
+        background-color: rgba(255,33,206, 0.10)
+        display: flex
+        align-items: center
+        justify-content: center
+    & .specialize__item--green
+        height: 55px
+        width: 55px
+        background-color: rgba(7,255,225, 0.10)
+        display: flex
+        align-items: center
+        justify-content: center
+    & .specialize__item--orange
+        height: 55px
+        width: 55px
+        background-color: rgba(255,168,104, 0.10)
+        display: flex
+        align-items: center
+        justify-content: center
+    & .specialize__item_title
+        margin-top: 15px
+        font-family: LatoBold
+        text-transform: uppercase
+    & .specialize__item_desr
+        margin-top: 15px
+        font-family: LatoLight
+        text-transform: 
+    & .specialize__item_arrow
+        margin-top: 30px
+.technologies
+    height: auto
+    padding-bottom: 100px
+    & .technologies--container
+        max-width: 90%
+        margin: 0 auto
+    & .technologies__title
+        text-align: center
+        text-transform: uppercase
+        color: $colorBlack
+        font-family: LatoBold
+    & .technologies__title_gradient
+        background: linear-gradient(#FC6FE5, #F36464)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    & .technologies__desr
+        max-width: 550px
+        margin: 0 auto
+        text-align: center
+        margin-top: 20px
+        font-family: LatoLight
+    & .technologies--slider
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        margin-top: 80px
+    & .technologies_btn
+        margin: 0 auto
+        display: flex
+        width: 180px
+        height: 50px
+        background-color: red
+        border: none
+        justify-content: center
+        color: #ffffff
+        text-transform: uppercase
+        background: linear-gradient(333.5deg, #6F81FC 0%, #A264F3 108.57%)
+        border-radius: 100px
+        margin-top: 50px
+        font-family: LatoBold
+        letter-spacing: 0.05em
+
+.study
+    height: auto
+    padding-bottom: 100px
+    position: relative
+    .study__circle
+        width: 186px
+        height: 186px
+        border-radius: 50%
+        background: linear-gradient(336.74deg, #4BFFBE -22.33%, #6F4BFF 119.11%)
+        box-shadow: 0px 4px 30px rgba(94, 180, 243, 0.75)
+        top: 0
+        z-index: -1
+        position: absolute
+        left: -90px
+    & .study--container
+        max-width: 95%
+        margin: 0 auto
+    & .study__title
+        text-align: center
+        text-transform: uppercase
+        color: $colorBlack
+        font-family: LatoBold
+    & .study__title_gradient
+        background: linear-gradient(#F96FFC, #64AEF3)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    & .study__desr
+        max-width: 550px
+        margin: 0 auto
+        text-align: center
+        margin-top: 20px
+        font-family: LatoLight
+    & .study__case--container
+        display: flex
+        justify-content: space-between
+        margin-top: 50px
+    & .study__case_item--left
+        display: flex
+        width: calc(50% - 2px)
+        height: 350px
+        background: linear-gradient(321.48deg, #FF4C4C -2.82%, #FF8C68 87.91%)
+        border-radius: 20px
+    & .study__case_item--right
+        display: flex
+        width: calc(50% - 2px)
+        height: 350px
+        padding-left: 10%
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+    & .study__arrow--right
+        margin-top: 30px
+    & .study__arrow--left
+        margin-top: 30px
+        transform: rotate(180deg)
+    & .study__case_title
+        background: linear-gradient(#FF4CAD, #704CFF)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        text-transform: uppercase
+    & .study__case_desr
+        max-width: 65%
+        margin-top: 30px
+    & .study_case_arrow
+        margin-top: 30px
+    & .study__case_item--left-two
+        display: flex
+        width: calc(50% - 2px)
+        height: 350px
+        background: linear-gradient(321.48deg, #FF4C4C -2.82%, #FF8C68 87.91%)
+        border-radius: 20px
+        order: 2
+    & .study__case_item--right-two
+        display: flex
+        width: calc(50% - 2px)
+        height: 350px
+        padding-right: 10%
+        flex-direction: column
+        align-items: flex-end
+        justify-content: center
+        order: 1
+    & .study__case_title
+        background: linear-gradient(#FF4CAD, #704CFF)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        text-transform: uppercase
+        font-family: LatoBold
+    & .study__case_desr
+        max-width: 65%
+        margin-top: 30px
+        font-family: LatoLight
+    & .study_case_arrow
+        margin-top: 30px
+    & .study_btn
+        margin: 0 auto
+        display: flex
+        width: 180px
+        height: 50px
+        background-color: red
+        border: none
+        justify-content: center
+        color: #ffffff
+        text-transform: uppercase
+        background: linear-gradient(333.5deg, #6F81FC 0%, #A264F3 108.57%)
+        border-radius: 100px
+        border-radius: 25px
+        margin-top: 50px
+        font-family: LatoBold
+        letter-spacing: 0.05em
+    & .study__case_desr-two
+        max-width: 65%
+        margin-top: 30px
+        font-family: LatoLight
+        text-align: right
+    
+.statistics
+    height: auto
+    padding-bottom: 100px
+    & .statistics--container
+        max-width: 95%
+        margin: 0 auto
+    & .statistics__title
+        text-align: center
+        text-transform: uppercase
+        color: $colorBlack
+        font-family: LatoBold
+    & .statistics__title_gradient
+        background: linear-gradient(#F96FFC, #64AEF3)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    & .statistics__desr
+        max-width: 550px
+        margin: 0 auto
+        text-align: center
+        margin-top: 20px
+        font-family: LatoLight
+    & .statistics__main--container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-top: 50px
+    & .statistics__item
+        flex: 1 1 auto 
+        margin-left: 80px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    & .statistics__item_numbe-one
+        background: linear-gradient(#FE4F47, #FFB628)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        font-size: 100px
+        font-family: LatoBold
+        text-align: center
+    & .statistics__item_number-two
+        background: linear-gradient(#615EFF, #FF28E9)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        font-size: 100px
+        font-family: LatoBold
+        text-align: center
+    & .statistics__item_number-three
+        background: linear-gradient(#28D8FF, #47D615)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        font-size: 100px
+        font-family: LatoBold
+        margin-top: 18px
+        text-align: center
+    & .statistics__item_number-four
+        background: linear-gradient(#6E97FF, #AD49FC)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        font-size: 100px
+        font-family: LatoBold
+    & .statistics__item_desr
+        max-width: 220px
+        text-align: center
+        font-family: LatoLight
+
+.team
+    height: auto
+    padding-bottom: 100px
+    position: relative
+    .team__circle 
+        width: 483px
+        height: 483px
+        border-radius: 50%
+        background: #FBFBFB
+        box-shadow: 5px 0px 60px rgba(92, 92, 92, 0.18)
+        position: absolute
+        top: -150px
+        left: -231px
+        display: flex
+        justify-content: center
+        align-items: flex-end
+        z-index: -1
+    .team__circle_small
+        background: linear-gradient(153.86deg, #FF4949 -35.46%,   #FF7E46 91.77%)
+        box-shadow: 5px 4px 40px rgba(210, 96, 31, 0.44)
+        width: 267px
+        height: 267px
+        border-radius: 50%
+        position: absolute
+        bottom: -50px
+        left: 120px
+    & .team--container
+        max-width: 95%
+        margin: 0 auto
+    & .team__title
+        text-align: center
+        text-transform: uppercase
+        color: $colorBlack
+        font-family: LatoBold
+    & .team__title_gradient
+        background: linear-gradient(#47D756, #64C8F3)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    & .team__desr
+        max-width: 550px
+        margin: 0 auto
+        text-align: center
+        margin-top: 20px
+        font-family: LatoLight
+    & .team__main--container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-top: 50px
+    & .team__item
+        width: 350px
+        height: 240px
+        padding-left: 50px
+        padding-right: 20px
+        cursor: pointer
+        padding-top: 60px
+        box-shadow: 0px 4px 30px rgba(84, 84, 84, 0.20)
+        border-radius: 20px
+        background-color: #fff
+        transition: 450ms
+    & .team__arrow
+        margin-top: 30px
+        transition: 600ms
+    & .team__item:hover
+        box-shadow: 0px 4px 30px rgba(127, 209, 255, 1)
+        & .team__arrow
+            width: 200px
+    & .team__item_title
+        font-family: LatoBold
+        text-transform: uppercase
+    & .team__item_desr
+        margin-top: 15px
+        font-family: LatoLight
+    & .team__item_arrow
+        margin-top: 30px
+    & .team_btn
+        margin: 0 auto
+        display: flex
+        width: 180px
+        height: 50px
+        background-color: red
+        border: none
+        justify-content: center
+        color: #ffffff
+        text-transform: uppercase
+        background: linear-gradient(#6F81FC, #A256F3)
+        border-radius: 25px
+        margin-top: 50px
+    & .team__main--container-two
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-top: 30px
+
+.question
+    height: auto
+    padding-bottom: 100px
+    & .question--container
+        max-width: 95%
+        margin: 0 auto
+    & .question__title
+        text-align: center
+        text-transform: uppercase
+        color: $colorBlack
+        font-family: LatoBold
+    & .question__title_gradient
+        background: linear-gradient(#FC6F6F, #F3BA64)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    & .question__desr
+        max-width: 550px
+        margin: 0 auto
+        text-align: center
+        margin-top: 20px
+        font-family: LatoLight
+    & .question-form
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+        margin-top: 50px
+    & .question-form--container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        width: 100%
+    & .question__group
+        display: flex
+        flex-direction: column
+        width: 100%
+        margin-left: 15px
+        margin-right: 15px
+        flex: 1 1 auto
+    & .question__group_title
+        font-family: LatoBold
+        text-transform: uppercase
+    input[type="text"],
+    input[type="email"],
+    input[type="phone"]
+          border: none
+          border-bottom: 1px solid #C5C5C5
+          height: 40px
+          color: #C5C5C5
+    & .question-form--container-two
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-top: 15px
+    & .question__group-texterea
+        flex: 4.6 0 auto
+        display: flex
+        flex-direction: column
+        margin-left: 15px
+        margin-right: 15px
+    & .question__group--file
+        position: relative
+        margin: 0 auto
+        display: flex
+        flex: 1 1 auto
+        flex-direction: column
+        margin-right: 15px
+        margin-left: 15px
+        justify-content: center
+        align-items: flex-start
+        input
+            width: 100%
+            height: 56px
+            text-align: center
+    & .question__group_img
+        position: absolute
+        left: 25%
+    & .question_btn
+        margin: 0 auto
+        display: flex
+        width: 180px
+        height: 50px
+        background-color: red
+        border: none
+        justify-content: center
+        color: #ffffff
+        text-transform: uppercase
+        background: linear-gradient(333.5deg, #6F81FC 0%, #A264F3 108.57%)
+        border-radius: 100px
+        border-radius: 25px
+        margin-top: 50px
+        font-family: LatoBold
+        letter-spacing: 0.05em
+
+.contact
+    height: auto
+    padding-bottom: 100px
+    background: linear-gradient(180deg, #535358 0%, #323239 100%)
+    & .contact--container
+        max-width: 95%
+        margin: 0 auto
+    & .contact__title
+        text-align: center
+        text-transform: uppercase
+        padding-top: 50px
+        font-family: LatoBold
+        color: #fff
+    & .contact__title_gradient
+        background: linear-gradient(#7C8CFF, #F476FF)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    & .contact__desr
+        max-width: 550px
+        margin: 0 auto
+        text-align: center
+        margin-top: 20px
+        font-family: LatoLight
+        color: #fff
+    & .contact__main--container
+        display: flex
+        flex-direction: row
+        margin-top: 50px
+        justify-content: space-between
+    & .contact__item
+        display: flex
+        flex-direction: column
+        margin-left: 30px
+    & .contact__item_title
+        text-transform: uppercase
+        color: #ffffff
+        font-family: LatoBold
+        font-size: 14px
+        line-height: 22px
+        letter-spacing: 0.02em
+        cursor: pointer
+        position: relative
+    & .contact__item_desr
+        color: #ffffff 
+        font-weight: 300
+        margin-top: 15px
+        line-height: 22px
+        font-size: 14px
+        letter-spacing: 0.02em
+        font-family: LatoLight
+        max-width: 250px
+    & .contact__item_phone
+        text-decoration: none
+        color: #ffffff
+        font-weight: 300
+        margin-top: 15px
+        line-height: 22px
+        font-size: 14px
+        letter-spacing: 0.02em
+        font-family: LatoLight
+    & .contact__item_email
+        text-decoration: none
+        color: #ffffff
+        font-weight: 300
+        line-height: 22px
+        font-size: 14px
+        letter-spacing: 0.02em
+        font-family: LatoLight
+    & .contact__item_circle--one
+        width: 33px
+        height: 33px
+        background: linear-gradient(249.68deg, #54BEFF 11.47%,    #704CFF 113.31%)
+        border-radius: 50%
+        position: absolute
+        margin-left: -14px
+        margin-top: -3px
+    & .contact__item_circle--two
+        width: 33px
+        height: 33px
+        border-radius: 50%
+        background: linear-gradient(249.68deg, #F56CE7 11.47%,#797BFA 113.31%)
+        position: absolute
+        margin-left: -14px
+        margin-top: -3px
+    & .contact__item_circle--three
+        width: 33px
+        height: 33px
+        border-radius: 50%
+        background: linear-gradient(249.68deg, #6CCCF5 11.47%, #79FA86 113.31%)
+        position: absolute
+        margin-left: -14px
+        margin-top: -3px
+    & .contact__item_circle--four
+        width: 33px
+        height: 33px
+        border-radius: 50%
+        background: linear-gradient(52.77deg, #F56C6C 12.33%, #E76CE2 80.23%)
+        position: absolute
+        margin-left: -14px
+        margin-top: -3px
+//slick
+
+.slick-dots
+    display: none !important
+.slick-slide 
+    display: none
+    float: left
+    height: 100%
+    min-height: 1px
+    display: flex !important
+    justify-content: center
+
+.icon-arrow_forward
+    transition: 1s
+    .icon-arrow_forward:hover
+        width: 50px
