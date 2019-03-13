@@ -244,6 +244,7 @@
   text-align: center;
   text-transform: uppercase;
   font-family: LatoBold;
+  font-size: 36px;
 }
 
 .specialize .specialize__title_gradient {
@@ -254,10 +255,11 @@
 }
 
 .specialize .specialize__desr {
-  max-width: 550px;
+  max-width: 650px;
   margin: 0 auto;
   text-align: center;
   margin-top: 20px;
+  font-size: 18px;
   font-family: LatoLight;
 }
 
@@ -432,6 +434,7 @@
   text-transform: uppercase;
   color: #2F2F2F;
   font-family: LatoBold;
+  font-size: 36px;
 }
 
 .technologies .technologies__title_gradient {
@@ -442,10 +445,11 @@
 }
 
 .technologies .technologies__desr {
-  max-width: 550px;
+  max-width: 650px;
   margin: 0 auto;
   text-align: center;
   margin-top: 20px;
+  font-size: 18px;
   font-family: LatoLight;
 }
 
@@ -516,6 +520,7 @@
   text-transform: uppercase;
   color: #2F2F2F;
   font-family: LatoBold;
+  font-size: 36px;
 }
 
 .study .study__title_gradient {
@@ -526,12 +531,12 @@
 }
 
 .study .study__desr {
-  max-width: 550px;
+  max-width: 650px;
   margin: 0 auto;
   text-align: center;
   margin-top: 20px;
+  font-size: 18px;
   font-family: LatoLight;
-  margin-bottom: 80px;
 }
 
 .study .study__case--container {
@@ -698,6 +703,7 @@
   text-transform: uppercase;
   color: #2F2F2F;
   font-family: LatoBold;
+  font-size: 36px;
 }
 
 .statistics .statistics__title_gradient {
@@ -708,10 +714,11 @@
 }
 
 .statistics .statistics__desr {
-  max-width: 550px;
+  max-width: 650px;
   margin: 0 auto;
   text-align: center;
   margin-top: 20px;
+  font-size: 18px;
   font-family: LatoLight;
 }
 
@@ -845,6 +852,7 @@
   text-transform: uppercase;
   color: #2F2F2F;
   font-family: LatoBold;
+  font-size: 36px;
 }
 
 .team .team__title_gradient {
@@ -855,10 +863,11 @@
 }
 
 .team .team__desr {
-  max-width: 550px;
+  max-width: 650px;
   margin: 0 auto;
   text-align: center;
   margin-top: 20px;
+  font-size: 18px;
   font-family: LatoLight;
 }
 
@@ -873,7 +882,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .team .team__item {
@@ -993,6 +1002,7 @@
   text-transform: uppercase;
   color: #2F2F2F;
   font-family: LatoBold;
+  font-size: 36px;
 }
 
 .question .question__title_gradient {
@@ -1003,10 +1013,11 @@
 }
 
 .question .question__desr {
-  max-width: 550px;
+  max-width: 650px;
   margin: 0 auto;
   text-align: center;
   margin-top: 20px;
+  font-size: 18px;
   font-family: LatoLight;
 }
 
@@ -1234,6 +1245,7 @@
   padding-top: 50px;
   font-family: LatoBold;
   color: #fff;
+  font-size: 36px;
 }
 
 .contact .contact__title_gradient {
@@ -1244,12 +1256,13 @@
 }
 
 .contact .contact__desr {
-  max-width: 550px;
+  max-width: 650px;
   margin: 0 auto;
   text-align: center;
   margin-top: 20px;
-  font-family: LatoLight;
+  font-size: 18px;
   color: #fff;
+  font-family: LatoLight;
 }
 
 .contact .contact__main--container {
