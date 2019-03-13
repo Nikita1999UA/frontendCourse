@@ -43,6 +43,33 @@ $colorBlack: #2F2F2F
         height: 70px
         left: 50px
         border-radius: 50%
+    & .about__circle--blue
+        position: absolute
+        left: 0 
+        bottom: -100px
+        z-index: 3
+    & .about__circle__white
+        position: absolute
+        left: -10px
+        bottom: -20px
+        width: 107.13px
+        height: 107.13px
+        left: -7.94px
+        background: #FBFBFB
+        box-shadow: 5px 0px 40px rgba(92, 92, 92, 0.1)
+        transform: rotate(1.1deg)
+        border-radius: 50%
+        z-index: 1
+    & .about__circle_violet
+        position: absolute
+        width: 35.6px
+        height: 35.31px
+        bottom: 150px
+        left: 100px
+        border-radius: 50%
+        background: linear-gradient(261.8deg, #A4BDFF -13.6%, #C182FF 113.63%)
+        box-shadow: -4px 4px 20px rgba(179, 159, 255, 0.28)
+        transform: rotate(-10.02deg)
     & .about__logo
         position: absolute
         top: 80px
@@ -56,7 +83,7 @@ $colorBlack: #2F2F2F
         display: flex
         flex-direction: row
         justify-content: flex-end
-        margin-top: 25px
+        margin-top: 40px
     & .about__header--left
         display: flex
         align-items: center
@@ -65,7 +92,7 @@ $colorBlack: #2F2F2F
         align-items: center
     & .about__menu
         display: flex
-        z-index: 10
+        z-index: 15
     & .about__menu_link
         list-style: none
         padding: 0px 25px 0px 25px
@@ -96,22 +123,24 @@ $colorBlack: #2F2F2F
     & .about__main
         margin-left: 100px
     & .about__main--container
-        width: 520px
+        width: 620px
         z-index: 10
         position: absolute
-        margin-top: 100px
+        margin-top: 120px
     & .about__main_text
         color: $colorBlack
-        font-size: 45px
+        font-size: 65px
         z-index: 5
         font-family: LatoBold
     & .about__main_desr
         font-family: LatoLight
         margin-top: 15px
+        font-size: 22px
     & .about__main_gradient
         background: linear-gradient(#FF4E6E, #5930FF)
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
+        font-size: 65px
     & .about__main_image
         height: 650px
         display: flex
@@ -318,6 +347,7 @@ $colorBlack: #2F2F2F
         margin-top: 20px
         font-size: 18px
         font-family: LatoLight
+        margin-bottom: 80px
     & .study__case--container
         display: flex
         justify-content: space-between
