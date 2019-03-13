@@ -196,15 +196,19 @@
 }
 
 .about .about__main_image img {
-  max-width: 450px;
+  max-width: 650px;
   -webkit-transform: rotate(15deg);
           transform: rotate(15deg);
   position: relative;
+  left: 20%;
+  z-index: 5;
 }
 
 .about .about__main_image .about__main_image--animate {
   position: absolute;
   margin-top: 30px;
+  z-index: 10;
+  margin-left: 15%;
 }
 
 .about .about__right_image {
@@ -216,6 +220,11 @@
 .about .about__right_image .about__right_figure {
   -webkit-transform: rotate(25deg);
           transform: rotate(25deg);
+}
+
+.about .about__right_img {
+  width: 600px;
+  z-index: 1;
 }
 
 .specialize {
