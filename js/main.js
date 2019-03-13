@@ -1,11 +1,10 @@
 $(document).ready(function(){
     $('.technologies--slider').slick({
-        dots: true,
+        dots: false,
         slidesToShow: 6,
         centerMode: true,
         centerPadding: '-10px',
-        prevArrow: '<img class="slick__prev" src="../img/left.png">',
-        nextArrow: '<img class="slick__next" src="../img/right.png   ">',
+        
     });
   });
 
@@ -19,5 +18,17 @@ $(document).ready(function(){
 		e.preventDefault();
 		return false;
 	});
+});
+
+
+$('.popup-modal').magnificPopup({
+  type: 'inline',
+  preloader: false,
+  focus: 'username',
+  modal: true
+});
+$(document).on('click', '.popup-modal-dismiss', function(e) {
+  e.preventDefault();
+  $.magnificPopup.close();
 });
   
