@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -183,16 +184,30 @@
                     </div>
                     <p class="specialize__item_title">01 // Web sites</p>
                     <p class="specialize__item_desr">Morbi euismod purus eu risus venis, ac vestibulum purus volutpat.</p>
-                    <svg class="specialize__arrow" width="65px" height="35px">
-                        <svg viewBox="0 0 1 1" preserveAspectRatio="none">
-                          <rect x="0" y="0" width="1" height="1" fill="none"/>
-                          <rect class="specialize__arrow_line" x="0" y="0.4" width="0.9" height="0.2" fill="#28AEFF"/>
-                        </svg>   
-                        <svg viewBox="0 0 0.8 1" preserveAspectRatio="xMaxYMid">
-                          <rect x="0" y="0" width="0.8" height="1" fill="none"/>
-                          <polygon class="specialize__arrow_triangle" points="0,0 0.8,0.5 0,1" fill="#28AEFF"/>
+                    <a class="popup-modal" href="#test-modal">
+                        <svg class="specialize__arrow" width="105px" height="35px">
+                            <svg viewBox="0 0 1 1" preserveAspectRatio="none">
+                              <rect x="0" y="0" width="1" height="1" fill="none"/>
+                              <rect class="specialize__arrow_line" x="0" y="0.4" width="0.51" height="0.05" fill="#28AEFF"/>
+                            </svg>   
+                            <svg class="specialize__arrow_triangle" viewBox="0 0 16 16" y="-2.5"  x="-5" fill="#fff" fill-opacity="0.01" stroke="#28AEFF" stroke-width="1" class="chevron" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M6 3.0306601717798212  L11.939339828220179 8 L6 12.939339828220179"></path>
+                            </svg>
                         </svg>
-                    </svg>
+                    </a>
+                    <div id="test-modal" class="white-popup-block mfp-hide">
+                        <div class="specialize__item--blue">
+                            <img class="specialize__modal_img" src="img/castle.jpg" alt="web-site">
+                        </div>
+                        <h3 class="specialize__modal_title">01 // Web sites</h3>
+                        <p class="specialize__modal_desr">Morbi euismod purus eu risus venis, ac vestibulum purus volutpat.
+                           Morbi euismod purus eu risus venis, ac vestibulum purus volutpat.
+                           Morbi euismod purus eu risus venis, ac vestibulum purus volutpat.
+                           Morbi euismod purus eu risus venis, ac vestibulum purus volutpat.
+                           Morbi euismod purus eu risus venis, ac vestibulum purus volutpat.
+                        </p>
+                        <p class="popup-modal-dismiss">X</p>
+                    </div>
                 </div>
                 <div class="specialize__item">
                     <div class="specialize__item--violet">
@@ -200,16 +215,31 @@
                     </div>
                     <p class="specialize__item_title">02 // Web APPs</p>
                     <p class="specialize__item_desr">Morbi euismod purus eu risus venis, ac vestibulum purus volutpat.</p>
-                    <svg class="specialize__arrow" width="65px" height="35px">
-                        <svg viewBox="0 0 1 1" preserveAspectRatio="none">
-                          <rect x="0" y="0" width="1" height="1" fill="none"/>
-                          <rect class="specialize__arrow_line" x="0" y="0.4" width="0.9" height="0.2" fill="#28AEFF"/>
-                        </svg>   
-                        <svg viewBox="0 0 0.8 1" preserveAspectRatio="xMaxYMid">
-                          <rect x="0" y="0" width="0.8" height="1" fill="none"/>
-                          <polygon class="specialize__arrow_triangle" points="0,0 0.8,0.5 0,1" fill="#28AEFF"/>
+                    <label for="mostrar-modal" style="color:black;" class="navi navi1" >
+                        <svg class="specialize__arrow" width="105px" height="35px">
+                            <svg viewBox="0 0 1 1" preserveAspectRatio="none">
+                              <rect x="0" y="0" width="1" height="1" fill="none"/>
+                              <rect class="specialize__arrow_line" x="0" y="0.4" width="0.51" height="0.05" fill="#28AEFF"/>
+                            </svg>   
+                            <svg class="specialize__arrow_triangle" viewBox="0 0 16 16" y="-2.5"  x="-5" fill="#fff" fill-opacity="0.01" stroke="#28AEFF" stroke-width="1" class="chevron" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M6 3.0306601717798212  L11.939339828220179 8 L6 12.939339828220179"></path>
+                            </svg>
                         </svg>
-                    </svg>
+                    </label>
+                    <input type="radio" id="mostrar-modal" name="modal" /><input type="radio" id="cerrar-modal" name="modal" />
+                        <div id="modal">
+                            <label id="exit" for="cerrar-modal">X</label>
+                            <img class="specialize__modal2_img" src="img/castle.jpg" alt="web-site">
+                            <div id="blockmodal">
+                                <h3 class="specialize__modal2_title">01 // Web sites</h3>
+                                <p class="specialize__modal2_desr">Morbi euismod purus eu risus venis, ac vestibulum purus volutpat.
+                                   Morbi euismod purus eu risus venis, ac vestibulum purus volutpat.
+                                   Morbi euismod purus eu risus venis, ac vestibulum purus volutpat.
+                                   Morbi euismod purus eu risus venis, ac vestibulum purus volutpat.
+                                   Morbi euismod purus eu risus venis, ac vestibulum purus volutpat.
+                                </p>
+                            </div>
+                        </div>
                 </div>
                 <div class="specialize__item">
                     <div class="specialize__item--green">
@@ -217,16 +247,25 @@
                     </div>
                     <p class="specialize__item_title">03 // Mobile APPs</p>
                     <p class="specialize__item_desr">Morbi euismod purus eu risus venis, ac vestibulum purus volutpat.</p>
-                    <svg class="specialize__arrow" width="65px" height="35px">
-                        <svg viewBox="0 0 1 1" preserveAspectRatio="none">
-                          <rect x="0" y="0" width="1" height="1" fill="none"/>
-                          <rect class="specialize__arrow_line" x="0" y="0.4" width="0.9" height="0.2" fill="#28AEFF"/>
-                        </svg>   
-                        <svg viewBox="0 0 0.8 1" preserveAspectRatio="xMaxYMid">
-                          <rect x="0" y="0" width="0.8" height="1" fill="none"/>
-                          <polygon class="specialize__arrow_triangle" points="0,0 0.8,0.5 0,1" fill="#28AEFF"/>
+                    <a class="popup-modal" href="#test-modal-2">
+                        <svg class="specialize__arrow" width="105px" height="35px">
+                            <svg viewBox="0 0 1 1" preserveAspectRatio="none">
+                              <rect x="0" y="0" width="1" height="1" fill="none"/>
+                              <rect class="specialize__arrow_line" x="0" y="0.4" width="0.51" height="0.05" fill="#28AEFF"/>
+                            </svg>   
+                            <svg class="specialize__arrow_triangle" viewBox="0 0 16 16" y="-2.5"  x="-5" fill="#fff" fill-opacity="0.01" stroke="#28AEFF" stroke-width="1" class="chevron" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M6 3.0306601717798212  L11.939339828220179 8 L6 12.939339828220179"></path>
+                            </svg>
                         </svg>
-                    </svg>
+                    </a>
+                    <div id="test-modal-2" class="white-popup-block mfp-hide">
+                        <div  class="modal2__circle"></div>
+                        <div class="modal2__circle__two"></div>
+                        <div class="modal2__circle_three"></div>
+                        <p class="popup-modal-dismiss"><svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#2F2F2F" stroke-opacity=".4" stroke-linecap="round" d="M1.707.947L9.75 8.99M1.162 8.739L9.205.697"/></svg></p>
+                        <p class="specialize__modal_desr">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod purus eu risus venenatis, ac vestibulum purus volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod purus eu risus venenatis, ac vestibulum purus volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
                 </div>
                 <div class="specialize__item">
                     <div class="specialize__item--orange">
@@ -234,14 +273,13 @@
                      </div>
                     <p class="specialize__item_title">04 // Data Science</p>
                     <p class="specialize__item_desr">Morbi euismod purus eu risus venis, ac vestibulum purus volutpat.</p>
-                    <svg class="specialize__arrow" width="65px" height="35px">
+                    <svg class="specialize__arrow" width="105px" height="35px">
                         <svg viewBox="0 0 1 1" preserveAspectRatio="none">
                           <rect x="0" y="0" width="1" height="1" fill="none"/>
-                          <rect class="specialize__arrow_line" x="0" y="0.4" width="0.9" height="0.2" fill="#28AEFF"/>
+                          <rect class="specialize__arrow_line" x="0" y="0.4" width="0.51" height="0.05" fill="#28AEFF"/>
                         </svg>   
-                        <svg viewBox="0 0 0.8 1" preserveAspectRatio="xMaxYMid">
-                          <rect x="0" y="0" width="0.8" height="1" fill="none"/>
-                          <polygon class="specialize__arrow_triangle" points="0,0 0.8,0.5 0,1" fill="#28AEFF"/>
+                        <svg class="specialize__arrow_triangle" viewBox="0 0 16 16" y="-2.5"  x="-5" fill="#fff" fill-opacity="0.01" stroke="#28AEFF" stroke-width="1" class="chevron" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M6 3.0306601717798212  L11.939339828220179 8 L6 12.939339828220179"></path>
                         </svg>
                     </svg>
                 </div>
@@ -253,14 +291,13 @@
                     </div>
                     <p class="specialize__item_title">05 // VR / AR</p>
                     <p class="specialize__item_desr">Morbi euismod purus eu risus venis, ac vestibulum purus volutpat.</p>
-                    <svg class="specialize__arrow" width="65px" height="35px">
+                    <svg class="specialize__arrow" width="105px" height="35px">
                         <svg viewBox="0 0 1 1" preserveAspectRatio="none">
                           <rect x="0" y="0" width="1" height="1" fill="none"/>
-                          <rect class="specialize__arrow_line" x="0" y="0.4" width="0.9" height="0.2" fill="#28AEFF"/>
+                          <rect class="specialize__arrow_line" x="0" y="0.4" width="0.51" height="0.05" fill="#28AEFF"/>
                         </svg>   
-                        <svg viewBox="0 0 0.8 1" preserveAspectRatio="xMaxYMid">
-                          <rect x="0" y="0" width="0.8" height="1" fill="none"/>
-                          <polygon class="specialize__arrow_triangle" points="0,0 0.8,0.5 0,1" fill="#28AEFF"/>
+                        <svg class="specialize__arrow_triangle" viewBox="0 0 16 16" y="-2.5"  x="-5" fill="#fff" fill-opacity="0.01" stroke="#28AEFF" stroke-width="1" class="chevron" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M6 3.0306601717798212  L11.939339828220179 8 L6 12.939339828220179"></path>
                         </svg>
                     </svg>
                 </div>
@@ -270,14 +307,13 @@
                     </div>
                     <p class="specialize__item_title">06 // Fintech</p>
                     <p class="specialize__item_desr">Morbi euismod purus eu risus venis, ac vestibulum purus volutpat.</p>
-                    <svg class="specialize__arrow" width="65px" height="35px">
+                    <svg class="specialize__arrow" width="105px" height="35px">
                         <svg viewBox="0 0 1 1" preserveAspectRatio="none">
                           <rect x="0" y="0" width="1" height="1" fill="none"/>
-                          <rect class="specialize__arrow_line" x="0" y="0.4" width="0.9" height="0.2" fill="#28AEFF"/>
+                          <rect class="specialize__arrow_line" x="0" y="0.4" width="0.51" height="0.05" fill="#28AEFF"/>
                         </svg>   
-                        <svg viewBox="0 0 0.8 1" preserveAspectRatio="xMaxYMid">
-                          <rect x="0" y="0" width="0.8" height="1" fill="none"/>
-                          <polygon class="specialize__arrow_triangle" points="0,0 0.8,0.5 0,1" fill="#28AEFF"/>
+                        <svg class="specialize__arrow_triangle" viewBox="0 0 16 16" y="-2.5"  x="-5" fill="#fff" fill-opacity="0.01" stroke="#28AEFF" stroke-width="1" class="chevron" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M6 3.0306601717798212  L11.939339828220179 8 L6 12.939339828220179"></path>
                         </svg>
                     </svg>
                 </div>
@@ -287,14 +323,13 @@
                     </div>
                     <p class="specialize__item_title">07 // Quality Assurance</p>
                     <p class="specialize__item_desr">Morbi euismod purus eu risus venis, ac vestibulum purus volutpat.</p>
-                    <svg class="specialize__arrow" width="65px" height="35px">
+                    <svg class="specialize__arrow" width="105px" height="35px">
                         <svg viewBox="0 0 1 1" preserveAspectRatio="none">
                           <rect x="0" y="0" width="1" height="1" fill="none"/>
-                          <rect class="specialize__arrow_line" x="0" y="0.4" width="0.9" height="0.2" fill="#28AEFF"/>
+                          <rect class="specialize__arrow_line" x="0" y="0.4" width="0.51" height="0.05" fill="#28AEFF"/>
                         </svg>   
-                        <svg viewBox="0 0 0.8 1" preserveAspectRatio="xMaxYMid">
-                          <rect x="0" y="0" width="0.8" height="1" fill="none"/>
-                          <polygon class="specialize__arrow_triangle" points="0,0 0.8,0.5 0,1" fill="#28AEFF"/>
+                        <svg class="specialize__arrow_triangle" viewBox="0 0 16 16" y="-2.5"  x="-5" fill="#fff" fill-opacity="0.01" stroke="#28AEFF" stroke-width="1" class="chevron" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M6 3.0306601717798212  L11.939339828220179 8 L6 12.939339828220179"></path>
                         </svg>
                     </svg>
                 </div>
@@ -304,14 +339,13 @@
                     </div>
                     <p class="specialize__item_title">08 // Quality Assurance</p>
                     <p class="specialize__item_desr">Morbi euismod purus eu risus venis, ac vestibulum purus volutpat.</p>
-                    <svg class="specialize__arrow" width="65px" height="35px">
+                    <svg class="specialize__arrow" width="105px" height="35px">
                         <svg viewBox="0 0 1 1" preserveAspectRatio="none">
                           <rect x="0" y="0" width="1" height="1" fill="none"/>
-                          <rect class="specialize__arrow_line" x="0" y="0.4" width="0.9" height="0.2" fill="#28AEFF"/>
+                          <rect class="specialize__arrow_line" x="0" y="0.4" width="0.51" height="0.05" fill="#28AEFF"/>
                         </svg>   
-                        <svg viewBox="0 0 0.8 1" preserveAspectRatio="xMaxYMid">
-                          <rect x="0" y="0" width="0.8" height="1" fill="none"/>
-                          <polygon class="specialize__arrow_triangle" points="0,0 0.8,0.5 0,1" fill="#28AEFF"/>
+                        <svg class="specialize__arrow_triangle" viewBox="0 0 16 16" y="-2.5"  x="-5" fill="#fff" fill-opacity="0.01" stroke="#28AEFF" stroke-width="1" class="chevron" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M6 3.0306601717798212  L11.939339828220179 8 L6 12.939339828220179"></path>
                         </svg>
                     </svg>
                 </div>
@@ -367,14 +401,13 @@
                 <div class="study__case_item--right">
                     <h2 class="study__case_title">project name</h2>
                     <p class="study__case_desr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod purus eu risus venenatis, ac vestibulum purus volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod purus eu risus venenatis, ac vestibulum purus volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <svg class="study__arrow--right" width="65px" height="35px">
+                    <svg class="study__arrow--right" width="105px" height="35px">
                         <svg viewBox="0 0 1 1" preserveAspectRatio="none">
                           <rect x="0" y="0" width="1" height="1" fill="none"/>
-                          <rect class="study__arrow_line" x="0" y="0.4" width="0.9" height="0.2" fill="#704CFF"/>
+                          <rect class="study_arrow_line" x="0" y="0.4" width="0.51" height="0.05" fill="#704CFF"/>
                         </svg>   
-                        <svg viewBox="0 0 0.8 1" preserveAspectRatio="xMaxYMid">
-                          <rect x="0" y="0" width="0.8" height="1" fill="none"/>
-                          <polygon class="study__arrow_triangle" points="0,0 0.8,0.5 0,1" fill="#704CFF"/>
+                        <svg class="study__arrow_triangle" viewBox="0 0 16 16" y="-2.5"  x="-5" fill="#fff" fill-opacity="0.01" stroke="#704CFF" stroke-width="1" class="chevron" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M6 3.0306601717798212  L11.939339828220179 8 L6 12.939339828220179"></path>
                         </svg>
                     </svg>
                 </div>
@@ -385,14 +418,13 @@
                 <div class="study__case_item--right-two">
                     <h2 class="study__case_title">project name</h2>
                     <p class="study__case_desr-two">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod purus eu risus venenatis, ac vestibulum purus volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod purus eu risus venenatis, ac vestibulum purus volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <svg class="study__arrow--left" width="65px" height="35px">
+                    <svg class="study__arrow--left" width="105px" height="35px">
                         <svg viewBox="0 0 1 1" preserveAspectRatio="none">
                           <rect x="0" y="0" width="1" height="1" fill="none"/>
-                          <rect class="study__arrow_line" x="0" y="0.4" width="0.9" height="0.2" fill="#704CFF"/>
+                          <rect class="study_arrow_line" x="0" y="0.4" width="0.51" height="0.05" fill="#704CFF"/>
                         </svg>   
-                        <svg viewBox="0 0 0.8 1" preserveAspectRatio="xMaxYMid">
-                          <rect x="0" y="0" width="0.8" height="1" fill="none"/>
-                          <polygon class="study__arrow_triangle" points="0,0 0.8,0.5 0,1" fill="#704CFF"/>
+                        <svg class="study__arrow_triangle" viewBox="0 0 16 16" y="-2.5"  x="-5" fill="#fff" fill-opacity="0.01" stroke="#704CFF" stroke-width="1" class="chevron" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M6 3.0306601717798212  L11.939339828220179 8 L6 12.939339828220179"></path>
                         </svg>
                     </svg>
                 </div>
@@ -437,56 +469,52 @@
                 <div class="team__item">
                     <h3 class="team__item_title">Ui/ux designer</h3>
                     <p class="team__item_desr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod purus eu risus venenatis, ac vestibulum purus volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <svg class="team__arrow" width="65px" height="35px">
+                    <svg class="team__arrow" width="105px" height="35px">
                         <svg viewBox="0 0 1 1" preserveAspectRatio="none">
                           <rect x="0" y="0" width="1" height="1" fill="none"/>
-                          <rect class="team__arrow_line" x="0" y="0.4" width="0.9" height="0.2" fill="#28AEFF"/>
+                          <rect class="team__arrow_line" x="0" y="0.4" width="0.51" height="0.05" fill="#28AEFF"/>
                         </svg>   
-                        <svg viewBox="0 0 0.8 1" preserveAspectRatio="xMaxYMid">
-                          <rect x="0" y="0" width="0.8" height="1" fill="none"/>
-                          <polygon class="team__arrow_triangle" points="0,0 0.8,0.5 0,1" fill="#28AEFF"/>
+                        <svg class="team__arrow_triangle" viewBox="0 0 16 16" y="-2.5"  x="-5" fill="#fff" fill-opacity="0.01" stroke="#28AEFF" stroke-width="1" class="chevron" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M6 3.0306601717798212  L11.939339828220179 8 L6 12.939339828220179"></path>
                         </svg>
                     </svg>
                 </div>
                 <div class="team__item">
                     <h3 class="team__item_title">Ui/ux designer</h3>
                     <p class="team__item_desr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod purus eu risus venenatis, ac vestibulum purus volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                     <svg class="team__arrow" width="65px" height="35px">
+                    <svg class="team__arrow" width="105px" height="35px">
                         <svg viewBox="0 0 1 1" preserveAspectRatio="none">
                           <rect x="0" y="0" width="1" height="1" fill="none"/>
-                          <rect class="team__arrow_line" x="0" y="0.4" width="0.9" height="0.2" fill="#28AEFF"/>
+                          <rect class="team__arrow_line" x="0" y="0.4" width="0.51" height="0.05" fill="#28AEFF"/>
                         </svg>   
-                        <svg viewBox="0 0 0.8 1" preserveAspectRatio="xMaxYMid">
-                          <rect x="0" y="0" width="0.8" height="1" fill="none"/>
-                          <polygon class="team__arrow_triangle" points="0,0 0.8,0.5 0,1" fill="#28AEFF"/>
+                        <svg class="team__arrow_triangle" viewBox="0 0 16 16" y="-2.5"  x="-5" fill="#fff" fill-opacity="0.01" stroke="#28AEFF" stroke-width="1" class="chevron" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M6 3.0306601717798212  L11.939339828220179 8 L6 12.939339828220179"></path>
                         </svg>
                     </svg>
                 </div>
                 <div class="team__item">
                     <h3 class="team__item_title">Ui/ux designer</h3>
                     <p class="team__item_desr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod purus eu risus venenatis, ac vestibulum purus volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <svg class="team__arrow" width="65px" height="35px">
+                    <svg class="team__arrow" width="105px" height="35px">
                         <svg viewBox="0 0 1 1" preserveAspectRatio="none">
                           <rect x="0" y="0" width="1" height="1" fill="none"/>
-                          <rect class="team__arrow_line" x="0" y="0.4" width="0.9" height="0.2" fill="#28AEFF"/>
+                          <rect class="team__arrow_line" x="0" y="0.4" width="0.51" height="0.05" fill="#28AEFF"/>
                         </svg>   
-                        <svg viewBox="0 0 0.8 1" preserveAspectRatio="xMaxYMid">
-                          <rect x="0" y="0" width="0.8" height="1" fill="none"/>
-                          <polygon class="team__arrow_triangle" points="0,0 0.8,0.5 0,1" fill="#28AEFF"/>
+                        <svg class="team__arrow_triangle" viewBox="0 0 16 16" y="-2.5"  x="-5" fill="#fff" fill-opacity="0.01" stroke="#28AEFF" stroke-width="1" class="chevron" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M6 3.0306601717798212  L11.939339828220179 8 L6 12.939339828220179"></path>
                         </svg>
                     </svg>
                 </div>
                 <div class="team__item">
                     <h3 class="team__item_title">Ui/ux designer</h3>
                     <p class="team__item_desr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod purus eu risus venenatis, ac vestibulum purus volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                     <svg class="team__arrow" width="65px" height="35px">
+                    <svg class="team__arrow" width="105px" height="35px">
                         <svg viewBox="0 0 1 1" preserveAspectRatio="none">
                           <rect x="0" y="0" width="1" height="1" fill="none"/>
-                          <rect class="team__arrow_line" x="0" y="0.4" width="0.9" height="0.2" fill="#28AEFF"/>
+                          <rect class="team__arrow_line" x="0" y="0.4" width="0.51" height="0.05" fill="#28AEFF"/>
                         </svg>   
-                        <svg viewBox="0 0 0.8 1" preserveAspectRatio="xMaxYMid">
-                          <rect x="0" y="0" width="0.8" height="1" fill="none"/>
-                          <polygon class="team__arrow_triangle" points="0,0 0.8,0.5 0,1" fill="#28AEFF"/>
+                        <svg class="team__arrow_triangle" viewBox="0 0 16 16" y="-2.5"  x="-5" fill="#fff" fill-opacity="0.01" stroke="#28AEFF" stroke-width="1" class="chevron" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M6 3.0306601717798212  L11.939339828220179 8 L6 12.939339828220179"></path>
                         </svg>
                     </svg>
                 </div>
@@ -495,56 +523,52 @@
                 <div class="team__item">
                     <h3 class="team__item_title">Ui/ux designer</h3>
                     <p class="team__item_desr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod purus eu risus venenatis, ac vestibulum purus volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <svg class="team__arrow" width="65px" height="35px">
+                    <svg class="team__arrow" width="105px" height="35px">
                         <svg viewBox="0 0 1 1" preserveAspectRatio="none">
                           <rect x="0" y="0" width="1" height="1" fill="none"/>
-                          <rect class="team__arrow_line" x="0" y="0.4" width="0.9" height="0.2" fill="#28AEFF"/>
+                          <rect class="team__arrow_line" x="0" y="0.4" width="0.51" height="0.05" fill="#28AEFF"/>
                         </svg>   
-                        <svg viewBox="0 0 0.8 1" preserveAspectRatio="xMaxYMid">
-                          <rect x="0" y="0" width="0.8" height="1" fill="none"/>
-                          <polygon class="team__arrow_triangle" points="0,0 0.8,0.5 0,1" fill="#28AEFF"/>
+                        <svg class="team__arrow_triangle" viewBox="0 0 16 16" y="-2.5"  x="-5" fill="#fff" fill-opacity="0.01" stroke="#28AEFF" stroke-width="1" class="chevron" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M6 3.0306601717798212  L11.939339828220179 8 L6 12.939339828220179"></path>
                         </svg>
                     </svg>
                 </div>
                 <div class="team__item">
                     <h3 class="team__item_title">Ui/ux designer</h3>
                     <p class="team__item_desr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod purus eu risus venenatis, ac vestibulum purus volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <svg class="team__arrow" width="65px" height="35px">
+                    <svg class="team__arrow" width="105px" height="35px">
                         <svg viewBox="0 0 1 1" preserveAspectRatio="none">
                           <rect x="0" y="0" width="1" height="1" fill="none"/>
-                          <rect class="team__arrow_line" x="0" y="0.4" width="0.9" height="0.2" fill="#28AEFF"/>
+                          <rect class="team__arrow_line" x="0" y="0.4" width="0.51" height="0.05" fill="#28AEFF"/>
                         </svg>   
-                        <svg viewBox="0 0 0.8 1" preserveAspectRatio="xMaxYMid">
-                          <rect x="0" y="0" width="0.8" height="1" fill="none"/>
-                          <polygon class="team__arrow_triangle" points="0,0 0.8,0.5 0,1" fill="#28AEFF"/>
+                        <svg class="team__arrow_triangle" viewBox="0 0 16 16" y="-2.5"  x="-5" fill="#fff" fill-opacity="0.01" stroke="#28AEFF" stroke-width="1" class="chevron" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M6 3.0306601717798212  L11.939339828220179 8 L6 12.939339828220179"></path>
                         </svg>
                     </svg>
                 </div>
                 <div class="team__item">
                     <h3 class="team__item_title">Ui/ux designer</h3>
                     <p class="team__item_desr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod purus eu risus venenatis, ac vestibulum purus volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <svg class="team__arrow" width="65px" height="35px">
+                    <svg class="team__arrow" width="105px" height="35px">
                         <svg viewBox="0 0 1 1" preserveAspectRatio="none">
                           <rect x="0" y="0" width="1" height="1" fill="none"/>
-                          <rect class="team__arrow_line" x="0" y="0.4" width="0.9" height="0.2" fill="#28AEFF"/>
+                          <rect class="team__arrow_line" x="0" y="0.4" width="0.51" height="0.05" fill="#28AEFF"/>
                         </svg>   
-                        <svg viewBox="0 0 0.8 1" preserveAspectRatio="xMaxYMid">
-                          <rect x="0" y="0" width="0.8" height="1" fill="none"/>
-                          <polygon class="team__arrow_triangle" points="0,0 0.8,0.5 0,1" fill="#28AEFF"/>
+                        <svg class="team__arrow_triangle" viewBox="0 0 16 16" y="-2.5"  x="-5" fill="#fff" fill-opacity="0.01" stroke="#28AEFF" stroke-width="1" class="chevron" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M6 3.0306601717798212  L11.939339828220179 8 L6 12.939339828220179"></path>
                         </svg>
                     </svg>
                 </div>
                 <div class="team__item">
                     <h3 class="team__item_title">Ui/ux designer</h3>
                     <p class="team__item_desr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod purus eu risus venenatis, ac vestibulum purus volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <svg class="team__arrow" width="65px" height="35px">
+                    <svg class="team__arrow" width="105px" height="35px">
                         <svg viewBox="0 0 1 1" preserveAspectRatio="none">
                           <rect x="0" y="0" width="1" height="1" fill="none"/>
-                          <rect class="team__arrow_line" x="0" y="0.4" width="0.9" height="0.2" fill="#28AEFF"/>
+                          <rect class="team__arrow_line" x="0" y="0.4" width="0.51" height="0.05" fill="#28AEFF"/>
                         </svg>   
-                        <svg viewBox="0 0 0.8 1" preserveAspectRatio="xMaxYMid">
-                          <rect x="0" y="0" width="0.8" height="1" fill="none"/>
-                          <polygon class="team__arrow_triangle" points="0,0 0.8,0.5 0,1" fill="#28AEFF"/>
+                        <svg class="team__arrow_triangle" viewBox="0 0 16 16" y="-2.5"  x="-5" fill="#fff" fill-opacity="0.01" stroke="#28AEFF" stroke-width="1" class="chevron" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M6 3.0306601717798212  L11.939339828220179 8 L6 12.939339828220179"></path>
                         </svg>
                     </svg>
                 </div>
@@ -587,9 +611,8 @@
                         <input class="question__group_input"  type="text" name="first_name" placeholder="Tell us more about your problem">
                     </div>
                     <div class="question__group--file">
-                        <label class="question__group_title"  for="first_name"></label>
-                        <input class="question__group_input" type="text" name="first_name" placeholder="Attach a file (optional)" />
-                        <img class="question__group_img" src="img/file.png" alt="file">
+                        <label class="question__group_text"  for="upload"><img class="question__group_img" src="img/file.png" alt="file"> <p class="question__group_text">Attach a file (optional) </p></label>
+                        <input class="question__group_input--upload" type="file" id="upload" placeholder="Attach a file (optional)" />
                     </div>
                 </div>
             </form>
@@ -618,30 +641,32 @@
                     <div class="contact__item_circle--two"></div>
                     <h3 class="contact__item_title">Sales office</h3>
                     <p class="contact__item_desr">Level 33, 25 Canada Square, Canary Wharf, London E14 5LB, UK </p>
-                    <a class="contact__item_phone" href="tel:+447700316104"> +447 70 031 61 04 </a>
+                    <a class="contact__item_phone--mt" href="tel:+447700316104"> +447 70 031 61 04 </a>
                     <a class="contact__item_email" href="mailto:info@usoft.pro">info@usoft.pro</a>
                 </div>
                 <div class="contact__item">
                     <div class="contact__item_circle--three"></div>
                     <h3 class="contact__item_title">Development office</h3>
                     <p class="contact__item_desr">Metro Plaza Viru väljak 2, 3. korrus, 10111 Tallinn, Estonia </p>
-                    <a class="contact__item_phone" href="tel:+37281707064"> +372 8 170 70 64 </a>
+                    <a class="contact__item_phone--mt" href="tel:+37281707064"> +372 8 170 70 64 </a>
                     <a class="contact__item_email" href="mailto:info@usoft.pro">info@usoft.pro</a>
                 </div>
                 <div class="contact__item">
                     <div class="contact__item_circle--four"></div>
                     <h3 class="contact__item_title">Sales office</h3>
                     <p class="contact__item_desr">Dorogozytska str. 3, Building B2, Kyiv, 04119, Ukraine </p>
-                    <a class="contact__item_phone" href="tel:+380444669432"> +380 44 466 94 32 </a>
+                    <a class="contact__item_phone--mt" href="tel:+380444669432"> +380 44 466 94 32 </a>
                     <a class="contact__item_email" href="mailto:info@usoft.pro">info@usoft.pro</a>
                 </div>
             </div>
         </div>
     </footer>
 
+
     <script  src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script  src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script  src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script  src="js/main.js"></script>
 </body> 
 </html>
