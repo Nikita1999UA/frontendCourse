@@ -48,7 +48,7 @@ $colorBlack: #2F2F2F
         text-transform: uppercase
 
     & .about--container
-        max-width: 95%
+        max-width: 85%
         margin: 0 auto
     & .about__header
         display: flex
@@ -133,7 +133,7 @@ $colorBlack: #2F2F2F
     height: auto
     padding-bottom: 100px
     & .specialize--container
-        max-width: 95%
+        max-width: 85%
         margin: 0 auto
     & .specialize__title
         color: $colorBlack
@@ -153,6 +153,8 @@ $colorBlack: #2F2F2F
     & .specialize__arrow
         margin-top: 30px
         transition: 600ms
+    & .specialize__arrow_triangle
+        fill: transparent
     & .specialize__services--container
         display: flex
         flex-direction: row
@@ -184,11 +186,11 @@ $colorBlack: #2F2F2F
             path 
                 fill: #fff
         & .specialize__arrow
-            width: 200px
+            width: 300px
             & .specialize__arrow_line
                 fill: #fff
             & .specialize__arrow_triangle
-                fill: #fff
+                stroke: #fff
     & .specialize__item--blue
         height: 55px
         width: 55px
@@ -224,14 +226,13 @@ $colorBlack: #2F2F2F
     & .specialize__item_desr
         margin-top: 15px
         font-family: LatoLight
-        text-transform: 
     & .specialize__item_arrow
         margin-top: 30px
 .technologies
     height: auto
     padding-bottom: 100px
     & .technologies--container
-        max-width: 90%
+        max-width: 80%
         margin: 0 auto
     & .technologies__title
         text-align: center
@@ -285,7 +286,7 @@ $colorBlack: #2F2F2F
         position: absolute
         left: -90px
     & .study--container
-        max-width: 95%
+        max-width: 85%
         margin: 0 auto
     & .study__title
         text-align: center
@@ -309,13 +310,13 @@ $colorBlack: #2F2F2F
     & .study__case_item--left
         display: flex
         width: calc(50% - 2px)
-        height: 350px
+        height: 450px
         background: linear-gradient(321.48deg, #FF4C4C -2.82%, #FF8C68 87.91%)
         border-radius: 20px
     & .study__case_item--right
         display: flex
         width: calc(50% - 2px)
-        height: 350px
+        height: 450px
         padding-left: 10%
         flex-direction: column
         align-items: flex-start
@@ -338,14 +339,14 @@ $colorBlack: #2F2F2F
     & .study__case_item--left-two
         display: flex
         width: calc(50% - 2px)
-        height: 350px
+        height: 450px
         background: linear-gradient(321.48deg, #FF4C4C -2.82%, #FF8C68 87.91%)
         border-radius: 20px
         order: 2
     & .study__case_item--right-two
         display: flex
         width: calc(50% - 2px)
-        height: 350px
+        height: 450px
         padding-right: 10%
         flex-direction: column
         align-items: flex-end
@@ -389,7 +390,7 @@ $colorBlack: #2F2F2F
     height: auto
     padding-bottom: 100px
     & .statistics--container
-        max-width: 95%
+        max-width: 85%
         margin: 0 auto
     & .statistics__title
         text-align: center
@@ -478,7 +479,7 @@ $colorBlack: #2F2F2F
         bottom: -50px
         left: 120px
     & .team--container
-        max-width: 95%
+        max-width: 85%
         margin: 0 auto
     & .team__title
         text-align: center
@@ -501,7 +502,7 @@ $colorBlack: #2F2F2F
         justify-content: space-between
         margin-top: 50px
     & .team__item
-        width: 350px
+        width: 25%
         height: 240px
         padding-left: 50px
         padding-right: 20px
@@ -511,13 +512,14 @@ $colorBlack: #2F2F2F
         border-radius: 20px
         background-color: #fff
         transition: 450ms
+        margin-left: 30px
     & .team__arrow
         margin-top: 30px
         transition: 600ms
     & .team__item:hover
         box-shadow: 0px 4px 30px rgba(127, 209, 255, 1)
         & .team__arrow
-            width: 200px
+            width: 280px
     & .team__item_title
         font-family: LatoBold
         text-transform: uppercase
@@ -563,7 +565,7 @@ $colorBlack: #2F2F2F
         align-items: center
         z-index: -1
     & .question--container
-        max-width: 95%
+        max-width: 70%
         margin: 0 auto
     & .question__title
         text-align: center
@@ -613,7 +615,7 @@ $colorBlack: #2F2F2F
         justify-content: space-between
         margin-top: 15px
     & .question__group-texterea
-        flex: 4.6 0 auto
+        flex: 5 0 auto
         display: flex
         flex-direction: column
         margin-left: 15px
@@ -628,13 +630,31 @@ $colorBlack: #2F2F2F
         margin-left: 15px
         justify-content: center
         align-items: flex-start
+        border-bottom: 1px solid #C5C5C5
+        & .question__group_input--upload
+            position: absolute
+            overflow: hidden
+            z-index: -1
+            width: 0.1px
+            height: 0.1px
+        & .question__group_title
+            border-bottom: 1px solid #C5C5C5
+            display: flex
+            align-items: center
+            margin: 0 auto
         input
             width: 100%
             height: 56px
             text-align: center
+        & .question__group_text
+            font-family: LatoLight
+            display: flex
+            align-items: center
+            margin: 0 auto
+
     & .question__group_img
         position: absolute
-        left: 25%
+        left: 15%
     & .question_btn
         margin: 0 auto
         display: flex
@@ -680,7 +700,7 @@ $colorBlack: #2F2F2F
             left: 50px
 
     & .contact--container
-        max-width: 95%
+        max-width: 85%
         margin: 0 auto
     & .contact__title
         text-align: center
@@ -735,6 +755,15 @@ $colorBlack: #2F2F2F
         font-size: 14px
         letter-spacing: 0.02em
         font-family: LatoLight
+    & .contact__item_phone--mt
+        text-decoration: none
+        color: #ffffff
+        font-weight: 300
+        margin-top: 38px
+        line-height: 22px
+        font-size: 14px
+        letter-spacing: 0.02em
+        font-family: LatoLight
     & .contact__item_email
         text-decoration: none
         color: #ffffff
@@ -775,7 +804,7 @@ $colorBlack: #2F2F2F
         position: absolute
         margin-left: -14px
         margin-top: -3px
-//slick
+//slick slider
 
 .slick-dots
     display: none !important
@@ -787,7 +816,232 @@ $colorBlack: #2F2F2F
     display: flex !important
     justify-content: center
 
+button.slick-next,
+button.slick-prev,     
+    display: none !important
 .icon-arrow_forward
     transition: 1s
     .icon-arrow_forward:hover
         width: 50px
+
+// modal
+.specialize__modal_img
+    width: 150px
+    height: 150px
+h3.specialize__modal_title
+    margin-top: 15px
+    font-family: LatoBold
+    text-transform: uppercase
+p.specialize__modal_desr
+    margin-top: 15px
+    font-family: LatoLight
+.specialize__modal2_img
+    width: 100%
+    height: 45%
+    position: relative
+#test-modal 
+    background: #fff
+    width: 25%
+    margin: 0 auto
+    border-radius: 20px
+    & .specialize__modal_img
+        width: 100%
+        height: 180px
+        border-top-left-radius: 20px
+        border-top-right-radius: 20px
+    & .specialize__modal_title
+        padding-left: 30px
+        padding-right: 30px
+    & .specialize__modal_desr
+        padding-left: 30px 
+        padding-right: 30px
+    & .popup-modal-dismiss
+        font-family: LatoBold
+        text-transform: uppercase
+        cursor: pointer
+        text-align: right
+        padding: 15px
+    & .popup-modal-dismiss:hover
+        color: red
+#test-modal-2
+    background: #fff
+    width: 265px
+    height: 247px
+    margin: 0 auto
+    padding: 40px
+    border-radius: 20px
+    position: relative
+    & .modal2__circle
+        position: absolute
+        width: 23px
+        height: 23px
+        background: linear-gradient(153.86deg, #FF4949 -35.46%, #FF7E46 91.77%)
+        box-shadow: 5px 4px 40px rgba(210, 96, 31, 0.44)
+        border-radius: 50%
+        left: -10px
+        top: -10px
+    & .modal2__circle__two
+        position: absolute
+        width: 42px
+        height: 42px
+        background: linear-gradient(153.86deg, #4DFF49 -35.46%, #46F4FF 91.77%)
+        box-shadow: 5px 4px 40px rgba(31, 210, 135, 0.44)
+        border-radius: 50%
+        bottom: 0
+        right: 0
+    & .modal2__circle_three
+        position: absolute
+        width: 23px
+        height: 23px
+        background: linear-gradient(153.86deg, #C549FF -35.46%, #FF4694 91.77%)
+        box-shadow: 5px 4px 40px rgba(210, 31, 160, 0.44)
+        border-radius: 50%
+        bottom: 15px
+        right: -10px
+    & .popup-modal-dismiss
+        font-family: LatoBold
+        text-transform: uppercase
+        cursor: pointer
+        text-align: right
+    & .popup-modal-dismiss:hover
+        color: red
+#modal 
+  background: rgba(0, 0, 0, 0.9)
+  color: #fff
+  position: fixed
+  top: 0vh
+  left: -30vw
+  height: 100vh
+  width: 30vw
+  z-index: 99999999
+  transition: all 0.5s
+.specialize__modal2_title
+    margin-top: 50px
+    font-family: LatoBold
+    text-transform: uppercase
+.specialize__modal2_desr
+    margin-top: 30px
+    font-family: LatoLight
+    line-height: 30px
+#mostrar-modal 
+  display: none
+
+#mostrar-modal + label 
+  background: steelblue
+  display: table
+  margin: auto
+  color: #fff
+  line-height: 3
+  padding: 0 1em
+  text-transform: uppercase
+  cursor: pointer
+
+#mostrar-modal + label:hover 
+  background: #38678f
+
+#mostrar-modal:checked ~ #modal 
+  top: 0
+  left: 0vw
+#mostrar-modal:checked ~ #cerrar-modal + label 
+  display: block
+
+#cerrar-modal 
+  display: none
+
+#phonemodal 
+  text-align: center
+  font-size: 23px
+  width: 230px
+  height: 40px
+  background-color: rgb(6, 105, 92)
+  margin-left: -75px
+  left: 50%
+  position: absolute
+
+#txtmodal
+  font-size: 23px
+  margin-top: 10px
+  text-align: center
+  font-weight: 400
+
+input 
+    outline: none
+
+#name, #phone, #text 
+  width: 300px
+  height: 60px
+  position: absolute
+  left: 50%
+  margin-left: -150px
+  color: white
+  padding: 15px
+  margin-top: 20px
+  border: none
+  border-bottom: 4px solid white
+  background-color: rgba(255, 255, 255, 0)
+
+#phone 
+  margin-top: 120px
+
+#text 
+  margin-top: 220px
+
+#send 
+  width: 220px
+  height: 55px
+  background-color: yellow
+  position: absolute
+  color: black
+  margin-left: 90px
+  font-size: 21px
+  text-align: center
+  font-weight: 400
+  padding-top: 10px
+  border-radius: 4px
+  margin-top: 330px
+  cursor: ointer
+
+
+#blockmodal 
+    width: 400px
+    height: 500px
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-left: -200px
+
+#cerrar-modal + label 
+  position: fixed
+  top: 1em
+  right: 1em
+  z-index: 9999999999
+  color: rgb(0, 0, 0)
+  font-weight: bold
+  cursor: pointer
+  background: rgb(255, 217, 0)
+  width: 25px
+  height: 25px
+  line-height: 25px
+  text-align: center
+  border-radius: 50%
+  display: none
+  transition: all 0.5s
+
+#cerrar-modal:checked ~ #modal 
+  top: 0
+
+#cerrar-modal:checked + label 
+  display: none
+#exit
+    position: absolute
+    top: 10px
+    right: 10px
+    z-index: 5
+    width: 30px
+    height: 30px
+    background: rgba(0, 0, 0, 0.9)
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    font-family: LatoBold
