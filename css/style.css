@@ -1594,28 +1594,6 @@ input {
   outline: none;
 }
 
-#name, #phone, #text {
-  width: 300px;
-  height: 60px;
-  position: absolute;
-  left: 50%;
-  margin-left: -150px;
-  color: white;
-  padding: 15px;
-  margin-top: 20px;
-  border: none;
-  border-bottom: 4px solid white;
-  background-color: rgba(255, 255, 255, 0);
-}
-
-#phone {
-  margin-top: 120px;
-}
-
-#text {
-  margin-top: 220px;
-}
-
 #send {
   width: 220px;
   height: 55px;
