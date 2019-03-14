@@ -2,6 +2,7 @@ $(document).ready(function(){
     $('.technologies--slider').slick({
         dots: false,
         slidesToShow: 6,
+        infinite: true,
         centerMode: true,
         centerPadding: '-10px',
         
@@ -31,4 +32,12 @@ $(document).on('click', '.popup-modal-dismiss', function(e) {
   e.preventDefault();
   $.magnificPopup.close();
 });
-  
+
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 6,
+  spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
