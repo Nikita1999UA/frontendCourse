@@ -1,14 +1,3 @@
-$(document).ready(function(){
-    $('.technologies--slider').slick({
-        dots: false,
-        slidesToShow: 6,
-        infinite: true,
-        centerMode: true,
-        centerPadding: '-10px',
-        
-    });
-  });
-
 
 $(document).ready(function(){
 	$("a[href*=#]").on("click", function(e){
