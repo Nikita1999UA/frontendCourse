@@ -857,18 +857,93 @@ $colorBlack: #2F2F2F
         position: absolute
         margin-left: -14px
         margin-top: -3px
-//slick slider
+// slider
+.swiper-container 
+    width: 100%
+    height: 150px
 
-.slick-dots
-    display: none !important
-.slick-slide 
-    display: none
-    float: left
-    height: 100%
-    min-height: 1px
-    display: flex !important
+.swiper-slide 
+    text-align: center
+    font-size: 18px
+    height: 150px
+    background: #fff
+    /* Center slide text vertically */
+    display: -webkit-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    -webkit-justify-content: center
     justify-content: center
+    -webkit-box-align: center
+    -ms-flex-align: center
+    -webkit-align-items: center
+    align-items: center
 
+.swiper-pagination-bullet
+    background: linear-gradient(152.28deg, #6FC1FC 4.84%, #593EFF 104.93%)
+
+.slider__wordpress:hover
+    cursor: pointer
+    path 
+        fill: #00759D
+.slider__joomla:hover
+    cursor: pointer
+    path
+        fill: orange
+
+.slider__drupal:hover
+    cursor: pointer
+    path
+        fill: #03A9F4
+
+.slider__php:hover
+    cursor: pointer
+    path 
+        fill: #8F9ED1
+
+.slider__sql:hover
+    cursor: pointer
+    path
+        fill: blue
+
+.slider__python:hover
+    cursor: pointer
+    path
+        fill: #FFDA44
+
+.slider__java:hover
+    cursor: pointer
+    path
+        fill: #DE0A17
+
+.slider__bitc:hover
+    cursor: pointer
+    path
+        fill: #FEDB41
+.slider__django:hover
+    cursor: pointer
+    fill: green
+
+.slider__react:hover
+    cursor: pointer
+    path 
+        fill: #61dafb
+
+.slider__angular:hover
+    cursor: pointer
+    path
+        fill:#dd0031
+
+.slider__mongo:hover
+    cursor: poiner
+    path
+        fill: #47a248
+.slider__unity:hover
+    cursor: pointer
+    path
+        fill: #000
 button.slick-next,
 button.slick-prev,     
     display: none !important
