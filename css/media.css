@@ -171,9 +171,9 @@
   .specialize .specialize__item.specialize__item {
     width: calc(35% - 2px);
     height: auto;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
   .specialize .specializeHover:hover {
     background-color: transparent;
