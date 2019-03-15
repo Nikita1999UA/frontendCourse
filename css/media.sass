@@ -1,0 +1,247 @@
+@media (max-width: 1610px)
+    .about
+        & .about__main_text
+            font-size: 35px
+        & .about__main_gradient
+            font-size: 35px
+        & .about__main_desr 
+            font-family: LatoLight
+            margin-top: 15px
+            font-size: 20px
+            max-width: 420px
+            width: 100%
+        & .about__main_image
+            img
+                max-width: 380px
+                left: 0
+        & .about__right_img
+            width: 400px
+@media (max-width: 1400px)
+    .about
+        & .about__main_image
+            justify-content: flex-end
+        & .about__right_img
+            display: none
+        & .about__main_image--animate
+            width: 500px
+            margin-left: 5% !important
+        & .about__menu_link
+            a 
+                font-size: 14px
+
+    .specialize 
+        & .specialize__services--container
+            flex-wrap: wrap
+            justify-content: center
+        & .specialize__item.specialize__item
+            width: calc(35% - 2px)
+    .statistics 
+        & .statistics__item_number-one
+            font-size: 60px
+        & .statistics__item_number-two
+            font-size: 60px
+        & .statistics__item_number-three
+            font-size: 60px
+        & .statistics__item_number-four
+            font-size: 60px
+    .team
+        & .team__main--container
+            flex-wrap: wrap
+            justify-content: center
+        & .team__item
+            margin-top: 30px
+        & .team__main--container-two
+            flex-wrap: wrap
+            justify-content: center
+            margin-top: 0
+@media (max-width: 992px)
+    .about
+        padding-bottom: 80px
+        & .about__logo
+            top: 90px
+        & .about__logo__text
+            margin-left: 50px
+        & .about__menu
+            display: none
+        & .about__menu
+            opacity: 0
+            left: -200px
+            position: fixed
+            transition: all .4s
+            top: 100px
+            z-index: 101
+            height: auto
+        & .about__menu.active 
+            left: 0
+            opacity: 1
+        & .menu-wrapper 
+            display: block
+
+        & .about__menu 
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+        & .about__btn
+            z-index: 20
+        & .about__main
+            margin-left: 0
+        & .about__main--container
+            margin-top: 60px
+            width: 90%
+        & .about__main_text
+            font-size: 35px
+        & .about__main_gradient
+            font-size: 35px
+        & .about__main_desr
+            text-align: left
+            font-size: 16px
+        & .about__main_image--animate
+            display: none
+        & .about__right_image
+            display: none
+        & .about__main_image
+            margin-left: 0
+            height: 550px
+            justify-content: center
+            img 
+                top: 35%
+                max-width: 280px
+                left: 0
+    .specialize
+        & .specialize__title
+            margin-top: 50px
+        & .specialize--container
+            max-width: 95%
+        & .specialize__item.specialize__item
+            width: calc(30% - 2px)
+        & .specializeHover:hover
+            background-color: transparent
+        & .specialize__services--container
+            flex-wrap: wrap
+            justify-content: center
+    .study
+        padding-bottom: 80px
+        & .study--container
+            max-width: 90%
+        & .study__case--container
+            flex-direction: column
+            margin-top: 25px
+        & .study__desr
+            margin-bottom: 15px
+        & .study__case_item--left
+            width: 100%
+        & .study__case_item--right
+            width: 100%
+            padding-left: 0
+            height: auto
+        & .study__case_title
+            margin-top: 15px
+        & .study__case_desr
+            max-width: 100%
+        & .study__case_item--left-two
+            width: 100%
+            order: 1
+        & .study__case_item--right-two
+            width: 100%
+            height: auto
+            align-items: flex-start
+            padding-right: 0
+        & .study__case_desr-two
+            max-width: 100%
+            text-align: left
+        & .study__arrow--left
+            transform: rotate(0deg)
+        & .study_btn
+            margin-top: 60px
+
+    .statistics
+        padding-bottom: 80px
+        & .statistics--container
+            max-width: 90%
+        & .statistics__main--container
+            flex-wrap: wrap
+            justify-content: left
+        & .statistics__item
+            width: calc(50% - 2px)
+            margin-left: 0
+        & .statistics__item_number-one
+            font-size: 28px
+        & .statistics__item_number-two
+            font-size: 28px
+        & .statistics__item_number-three
+            font-size: 28px
+        & .statistics__item_number-four
+            font-size: 28px
+        & .statistics__item_desr
+            max-width: 100px
+
+    .team
+        padding-bottom: 80px
+        & .team--container
+            max-width: 90%
+        & .team__main--container
+            flex-direction: column
+            align-items: center
+            margin-top: 40px
+        & .team__main--container-two
+            flex-direction: column
+            align-items: center
+        & .team__item
+            width: 70%
+            margin-left: 0
+            margin-top: 30px
+            height: auto
+            padding-bottom: 30px
+    .question
+        padding-bottom: 80px
+        & .question--container
+            max-width: 90%
+        & .question-form--container
+            flex-direction: column
+            justify-content: center
+            label
+                margin-top: 25px
+        & .question__group
+            width: 90%
+        & .question-form--container-two
+            flex-direction: column
+            justify-content: center
+        & .question__group-texterea
+            width: 90%
+        & .question__group--file
+            width: 90%
+            margin-top: 25px
+            padding-bottom: 25px
+        & .question__right_image
+            display: none
+        & .question-form
+            flex-direction: column
+        & .question_btn
+            margin-top: 50px
+    .contact
+        & .contact--container
+            max-width: 90%
+        & .contact__main--container
+            margin-top: 0
+        & .contact__figure
+            display: none
+        & .contact__main--container
+            flex-wrap: wrap
+            justify-content: center
+        & .contact__item
+            width: calc(35% - 2px)
+            margin-top: 30px
+        & .contact__item_phone
+            font-size: 12px
+        & .contact__item_phone--mt
+            margin-top: 15px
+            font-size: 12px
+        & .contact__item_desr
+            font-size: 12px
+        & .contact__item_email
+            font-size: 12px
+
+
+
