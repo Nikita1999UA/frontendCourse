@@ -128,11 +128,13 @@
     z-index: 20;
   }
   .about .about__main {
-    margin-left: 30px;
+    margin-left: 0;
+    overflow: hidden;
   }
   .about .about__main--container {
     margin-top: 60px;
     width: 90%;
+    overflow: hidden;
   }
   .about .about__main_desr {
     text-align: left;
@@ -384,12 +386,6 @@
 }
 
 @media (max-width: 500px) {
-  .about .about__main_text {
-    font-size: 25px;
-  }
-  .about .about__main_gradient {
-    font-size: 25px;
-  }
   #test-modal {
     width: 90%;
     height: auto;
