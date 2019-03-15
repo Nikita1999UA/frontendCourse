@@ -132,7 +132,7 @@
   }
   .about .about__main--container {
     margin-top: 60px;
-    width: 90%;
+    z-index: 2;
   }
   .about .about__main_desr {
     text-align: left;
