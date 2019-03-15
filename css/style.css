@@ -1582,16 +1582,11 @@ p.specialize__modal_desr {
   position: relative;
 }
 
-.mfp-wrap {
-  overflow: scroll  !important;
-}
-
 #test-modal {
   background: #fff;
   width: 25%;
   margin: 0 auto;
   border-radius: 20px;
-  overflow: scroll;
 }
 
 #test-modal .specialize__modal_img {
