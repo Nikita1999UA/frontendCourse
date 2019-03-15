@@ -85,10 +85,13 @@
     padding-bottom: 80px;
   }
   .about .about__logo {
-    top: 0;
+    top: 40px;
   }
   .about .about__logo_big {
     height: auto;
+  }
+  .about .about__logo_big {
+    width: 120px;
   }
   .about .about__menu {
     display: none;
