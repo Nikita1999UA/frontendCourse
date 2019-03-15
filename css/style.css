@@ -702,16 +702,10 @@
 
 .study .study__button_n {
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 180px;
   height: 50px;
   background-color: red;
   border: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   color: #ffffff;
   text-transform: uppercase;
   background: linear-gradient(333.5deg, #6F81FC 0%, #A264F3 108.57%);
@@ -975,16 +969,10 @@
 
 .team .team__button_n {
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 180px;
   height: 50px;
   background-color: red;
   border: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   color: #ffffff;
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, from(#6F81FC), to(#A256F3));
@@ -1222,16 +1210,10 @@
 
 .question .question__button_n {
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 180px;
   height: 50px;
   background-color: red;
   border: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   color: #ffffff;
   text-transform: uppercase;
   background: linear-gradient(333.5deg, #6F81FC 0%, #A264F3 108.57%);
