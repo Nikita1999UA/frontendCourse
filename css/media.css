@@ -169,10 +169,11 @@
     max-width: 95%;
   }
   .specialize .specialize__item.specialize__item {
-    width: calc(45% - 2px);
-    margin-left: 15px;
+    width: calc(35% - 2px);
     height: auto;
-    padding: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .specialize .specializeHover:hover {
     background-color: transparent;
