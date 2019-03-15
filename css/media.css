@@ -4,6 +4,7 @@
   }
   .about .about__main_gradient {
     font-size: 35px;
+    z-index: 9999;
   }
   .about .about__main_desr {
     font-family: LatoLight;
