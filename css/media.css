@@ -129,12 +129,10 @@
   }
   .about .about__main {
     margin-left: 0;
-    overflow: hidden;
   }
   .about .about__main--container {
     margin-top: 60px;
-    width: 90%;
-    overflow: hidden;
+    width: 100%;
   }
   .about .about__main_desr {
     text-align: left;
