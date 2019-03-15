@@ -100,9 +100,15 @@
 
 .about .about__logo {
   position: absolute;
-  top: 80px;
+  top: -30px;
+  margin-left: -50px;
   font-family: LatoSemiBold;
   text-transform: uppercase;
+}
+
+.about .about__logo_big {
+  width: 220px;
+  height: 250px;
 }
 
 .about .about--container {
