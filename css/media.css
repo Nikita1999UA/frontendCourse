@@ -387,4 +387,11 @@
     font-size: 12px;
   }
 }
+
+@media (max-width: 500px) {
+  #test-modal {
+    width: 90%;
+    height: auto;
+  }
+}
 /*# sourceMappingURL=media.css.map */
