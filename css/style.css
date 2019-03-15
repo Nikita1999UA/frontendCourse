@@ -1582,6 +1582,10 @@ p.specialize__modal_desr {
   position: relative;
 }
 
+.mfp-wrap {
+  overflow: hidden !important;
+}
+
 #test-modal {
   background: #fff;
   width: 25%;
