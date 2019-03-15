@@ -384,6 +384,12 @@
 }
 
 @media (max-width: 500px) {
+  .about .about__main_text {
+    font-size: 25px;
+  }
+  .about .about__main_gradient {
+    font-size: 25px;
+  }
   #test-modal {
     width: 90%;
     height: auto;
