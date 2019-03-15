@@ -404,7 +404,7 @@
   }
   #test-modal .specialize__modal_desr {
     overflow: scroll;
-    height: 50%;
+    height: 150px;
   }
   #test-modal-2 {
     width: 60%;
