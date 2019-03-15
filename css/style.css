@@ -696,7 +696,11 @@
   margin-top: 30px;
 }
 
-.study .study_btn {
+.study .study__button {
+  text-align: center;
+}
+
+.study .study__button_n {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -965,7 +969,11 @@
   margin-top: 30px;
 }
 
-.team .team_btn {
+.team .team__button {
+  text-align: center;
+}
+
+.team .team__button_n {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1208,7 +1216,11 @@
   left: 15%;
 }
 
-.question .question_btn {
+.question .question__button {
+  text-align: center;
+}
+
+.question .question__button_n {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
