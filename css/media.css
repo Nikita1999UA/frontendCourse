@@ -169,7 +169,9 @@
     max-width: 95%;
   }
   .specialize .specialize__item.specialize__item {
-    width: calc(30% - 2px);
+    width: calc(50% - 2px);
+    height: auto;
+    padding: 0;
   }
   .specialize .specializeHover:hover {
     background-color: transparent;
@@ -382,6 +384,16 @@
   }
   .contact .contact__item_email {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .specialize .specialize__item.specialize__item {
+    width: calc(48% - 2px);
+    margin-left: 5px;
+  }
+  .specialize .specializeHover:hover {
+    background-color: transparent;
   }
 }
 /*# sourceMappingURL=media.css.map */

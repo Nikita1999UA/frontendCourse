@@ -115,7 +115,9 @@
         & .specialize--container
             max-width: 95%
         & .specialize__item.specialize__item
-            width: calc(30% - 2px)
+            width: calc(50% - 2px)
+            height: auto
+            padding: 0
         & .specializeHover:hover
             background-color: transparent
         & .specialize__services--container
@@ -244,4 +246,10 @@
             font-size: 12px
 
 
-
+@media (max-width: 500px)
+    .specialize
+        & .specialize__item.specialize__item
+            width: calc(48% - 2px)
+            margin-left: 5px
+        & .specializeHover:hover
+            background-color: transparent
