@@ -30,3 +30,9 @@ var swiper = new Swiper('.swiper-container', {
     clickable: true,
   },
 });
+
+
+$('.menu-wrapper').on('click', function() {
+  $('.hamburger-menu').toggleClass('animate');
+  $('.about__menu').toggleClass('active');
+});
