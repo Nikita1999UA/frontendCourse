@@ -333,54 +333,8 @@
   border-radius: 20px;
 }
 
-.specialize .specialize__item:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#A065F3), to(#6D82FC));
-  background: linear-gradient(#A065F3, #6D82FC);
-  cursor: pointer;
-}
-
-.specialize .specialize__item:hover .specialize__item--blue {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.specialize .specialize__item:hover .specialize__item--violet {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.specialize .specialize__item:hover .specialize__item--green {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.specialize .specialize__item:hover .specialize__item--orange {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.specialize .specialize__item:hover .specialize__item_title {
-  color: #fff;
-}
-
-.specialize .specialize__item:hover .specialize__item_desr {
-  color: #fff;
-}
-
-.specialize .specialize__item:hover .specialize__item_arrow {
-  color: #fff;
-}
-
-.specialize .specialize__item:hover svg path {
-  fill: #fff;
-}
-
 .specialize .specialize__item:hover .specialize__arrow {
   width: 120%;
-}
-
-.specialize .specialize__item:hover .specialize__arrow .specialize__arrow_line {
-  fill: #fff;
-}
-
-.specialize .specialize__item:hover .specialize__arrow .specialize__arrow_triangle {
-  stroke: #fff;
 }
 
 .specialize .specialize__item--blue {
