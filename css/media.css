@@ -424,9 +424,9 @@
     display: block;
     width: 40px;
     height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
+    position: fixed;
+    top: 50px;
+    left: 30px;
     cursor: pointer;
     opacity: 0;
     z-index: 2;
@@ -456,14 +456,19 @@
     -webkit-transform-origin: 0% 100%;
             transform-origin: 0% 100%;
   }
+  #menuToggle:checked {
+    position: fixed;
+    top: 15px;
+    left: 30px;
+  }
   #menuToggle input:checked ~ span {
     opacity: 1;
-    -webkit-transform: rotate(45deg) translate(-25px, 1px);
-            transform: rotate(45deg) translate(-25px, 1px);
+    -webkit-transform: rotate(45deg) translate(-15px, 1px);
+            transform: rotate(45deg) translate(-15px, 1px);
     background: #fff;
     position: fixed;
     margin-left: 10px;
-    width: 55px;
+    width: 35px;
   }
   #menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
@@ -471,11 +476,11 @@
             transform: rotate(0deg) scale(0.4, 0.4);
   }
   #menuToggle input:checked ~ span:nth-last-child(2) {
-    -webkit-transform: rotate(-45deg) translate(-25px, 0px);
-            transform: rotate(-45deg) translate(-25px, 0px);
+    -webkit-transform: rotate(-45deg) translate(-15px, 0px);
+            transform: rotate(-45deg) translate(-15px, 0px);
     position: fixed;
     margin-left: 10px;
-    width: 55px;
+    width: 35px;
   }
   .about__menu {
     position: fixed;

@@ -299,9 +299,9 @@
         display: block
         width: 40px
         height: 32px
-        position: absolute
-        top: -7px
-        left: -5px
+        position: fixed
+        top: 50px
+        left: 30px
         cursor: pointer
         opacity: 0 /* hide this */
         z-index: 2 /* and place it over the hamburger */
@@ -325,22 +325,26 @@
 
     #menuToggle span:nth-last-child(2)
         transform-origin: 0% 100%
+    #menuToggle:checked
+        position: fixed
+        top: 15px
+        left: 30px
     #menuToggle input:checked ~ span
         opacity: 1
-        transform: rotate(45deg) translate(-25px, 1px)
+        transform: rotate(45deg) translate(-15px, 1px)
         background: #fff
         position: fixed
         margin-left: 10px
-        width: 55px
+        width: 35px
     #menuToggle input:checked ~ span:nth-last-child(3)
         opacity: 0
         transform: rotate(0deg) scale(0.4, 0.4)
         // position: fixed
     #menuToggle input:checked ~ span:nth-last-child(2)
-        transform: rotate(-45deg) translate(-25px, 0px)
+        transform: rotate(-45deg) translate(-15px, 0px)
         position: fixed
         margin-left: 10px
-        width: 55px
+        width: 35px
 
     .about__menu
 
@@ -377,7 +381,6 @@
             color: #fff !important
     #menuToggle input:checked ~ ul
         transform: none
-
 @media (max-width: 768px)
     #test-modal
         width: 100%
