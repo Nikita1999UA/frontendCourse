@@ -85,12 +85,12 @@
             & .specialize__arrow_triangle
                 stroke: #fff
 @media (max-width: 992px)
+     
     .about
         padding-bottom: 80px
         & .about__logo
             top: 40px
             margin-left: 20px
-            z-index: 22
         & .about__logo_big
             height: auto
         & .about__logo_big
@@ -121,7 +121,7 @@
         //     align-items: center
 
         & .about__btn
-            z-index: 20
+            z-index: 5
         & .about__main
             margin-left: 0
         & .about__main_text
@@ -289,9 +289,11 @@
             font-size: 12px
         & .contact__item_email
             font-size: 12px
+    #menu0
+        overflow-y: hidden 
     #menuToggle 
         position: absolute
-        top: 14px
+        top: 15px
         left: 30px
         right: 0
         z-index: 1
@@ -327,13 +329,21 @@
         transform-origin: 0% 100%
     #menuToggle input:checked ~ span
         opacity: 1
-        transform: rotate(45deg) translate(-2px, -1px)
+        transform: rotate(45deg) translate(-25px, 1px)
         background: #fff
+        position: fixed
+        margin-left: 10px
+        width: 55px
     #menuToggle input:checked ~ span:nth-last-child(3)
         opacity: 0
-        transform: rotate(0deg) scale(0.2, 0.2)
+        transform: rotate(0deg) scale(0.4, 0.4)
+        // position: fixed
     #menuToggle input:checked ~ span:nth-last-child(2)
-        transform: rotate(-45deg) translate(0, -1px)
+        transform: rotate(-45deg) translate(-25px, 0px)
+        position: fixed
+        margin-left: 10px
+        width: 55px
+
     .about__menu
 
         position: fixed
@@ -353,7 +363,8 @@
         z-index: 9999
         transform-origin: 0% 0%
         transform: translate(-100%, 0)
-        
+        overflow: scroll
+
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
 
         display: flex

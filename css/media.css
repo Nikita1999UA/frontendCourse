@@ -131,7 +131,6 @@
   .about .about__logo {
     top: 40px;
     margin-left: 20px;
-    z-index: 22;
   }
   .about .about__logo_big {
     height: auto;
@@ -147,7 +146,7 @@
     font-size: 14px;
   }
   .about .about__btn {
-    z-index: 20;
+    z-index: 5;
   }
   .about .about__main {
     margin-left: 0;
@@ -414,9 +413,12 @@
   .contact .contact__item_email {
     font-size: 12px;
   }
+  #menu0 {
+    overflow-y: hidden;
+  }
   #menuToggle {
     position: absolute;
-    top: 14px;
+    top: 15px;
     left: 30px;
     right: 0;
     z-index: 1;
@@ -459,18 +461,24 @@
   }
   #menuToggle input:checked ~ span {
     opacity: 1;
-    -webkit-transform: rotate(45deg) translate(-2px, -1px);
-            transform: rotate(45deg) translate(-2px, -1px);
+    -webkit-transform: rotate(45deg) translate(-25px, 1px);
+            transform: rotate(45deg) translate(-25px, 1px);
     background: #fff;
+    position: fixed;
+    margin-left: 10px;
+    width: 55px;
   }
   #menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
-    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-            transform: rotate(0deg) scale(0.2, 0.2);
+    -webkit-transform: rotate(0deg) scale(0.4, 0.4);
+            transform: rotate(0deg) scale(0.4, 0.4);
   }
   #menuToggle input:checked ~ span:nth-last-child(2) {
-    -webkit-transform: rotate(-45deg) translate(0, -1px);
-            transform: rotate(-45deg) translate(0, -1px);
+    -webkit-transform: rotate(-45deg) translate(-25px, 0px);
+            transform: rotate(-45deg) translate(-25px, 0px);
+    position: fixed;
+    margin-left: 10px;
+    width: 55px;
   }
   .about__menu {
     position: fixed;
@@ -491,6 +499,7 @@
             transform-origin: 0% 0%;
     -webkit-transform: translate(-100%, 0);
             transform: translate(-100%, 0);
+    overflow: scroll;
     -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
