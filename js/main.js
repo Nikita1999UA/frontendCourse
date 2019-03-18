@@ -1,16 +1,3 @@
-
-$(document).ready(function(){
-	$("a[href*=#]").on("click", function(e){
-		var anchor = $(this);
-		$('html, body').stop().animate({
-			scrollTop: $(anchor.attr('href')).offset().top
-		}, 1000);
-		e.preventDefault();
-		return false;
-	});
-});
-
-
 $('.popup-modal').magnificPopup({
   type: 'inline',
   preloader: false,
@@ -29,10 +16,19 @@ var swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
     clickable: true,
   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 });
 
 
-$('.menu-wrapper').on('click', function() {
-  $('.hamburger-menu').toggleClass('animate');
-  $('.about__menu').toggleClass('active');
+$(document).ready(function(){
+  $(".about__menu").on("click",".undo1, .undo2, .undo3, .undo4, .undo5" , function (event) {
+      event.preventDefault();
+      document.getElementById('mnr').checked=false;
+      var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 1500);
+  });
 });
