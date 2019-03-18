@@ -413,9 +413,6 @@
   .contact .contact__item_email {
     font-size: 12px;
   }
-  #menu0 {
-    overflow-y: hidden;
-  }
   #menuToggle {
     position: absolute;
     top: 15px;
