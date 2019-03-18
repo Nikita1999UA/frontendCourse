@@ -457,7 +457,7 @@
     opacity: 1;
     -webkit-transform: rotate(45deg) translate(-2px, -1px);
             transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
+    background: #000;
   }
   #menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
@@ -471,7 +471,6 @@
   .about__menu {
     position: fixed;
     width: 100%;
-    padding: 50px;
     margin-top: -90px;
     margin-left: -50px;
     height: 100%;
@@ -507,7 +506,6 @@
     padding: 20px 0 !important;
   }
   .about__menu li a {
-    font-size: 36px !important;
     color: #fff !important;
   }
   #menuToggle input:checked ~ ul {
