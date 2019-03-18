@@ -457,7 +457,7 @@
     opacity: 1;
     -webkit-transform: rotate(45deg) translate(-2px, -1px);
             transform: rotate(45deg) translate(-2px, -1px);
-    background: #000;
+    background: #fff;
   }
   #menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
