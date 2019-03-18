@@ -130,7 +130,7 @@
   }
   .about .about__logo {
     top: 40px;
-    margin-left: 30px;
+    margin-left: 20px;
     z-index: 22;
   }
   .about .about__logo_big {
@@ -417,7 +417,7 @@
   #menuToggle {
     position: absolute;
     top: 14px;
-    left: 50px;
+    left: 30px;
     right: 0;
     z-index: 1;
   }
@@ -477,6 +477,8 @@
     width: 100%;
     margin-top: -90px;
     margin-left: -50px;
+    padding-right: 30px;
+    padding-top: 10%;
     height: 100%;
     padding-bottom: 50px;
     background: -webkit-gradient(linear, left top, left bottom, from(#535358), to(#323239));
