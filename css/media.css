@@ -130,7 +130,7 @@
   }
   .about .about__logo {
     top: 40px;
-    margin-left: 50px;
+    margin-left: 40px;
     z-index: 22;
   }
   .about .about__logo_big {
@@ -141,6 +141,10 @@
   }
   .about .about__menu {
     z-index: 0;
+  }
+  .about .about__btn {
+    width: 150px;
+    font-size: 14px;
   }
   .about .about__btn {
     z-index: 20;
