@@ -85,9 +85,9 @@
 
 @media (min-width: 992px) {
   .specialize__item:hover {
+    cursor: pointer;
     background: -webkit-gradient(linear, left top, left bottom, from(#A065F3), to(#6D82FC));
     background: linear-gradient(#A065F3, #6D82FC);
-    cursor: pointer;
   }
   .specialize__item:hover .specialize__item--blue {
     background: rgba(255, 255, 255, 0.2);
@@ -110,16 +110,16 @@
   .specialize__item:hover .specialize__item_arrow {
     color: #fff;
   }
-  .specialize__item:hover svg path {
+  .specialize__item:hover svg:hover path {
     fill: #fff;
   }
   .specialize__item:hover .specialize__arrow {
     width: 120%;
   }
-  .specialize__item:hover .specialize__arrow .specialize__arrow_line {
+  .specialize__item:hover .specialize__arrow_line {
     fill: #fff;
   }
-  .specialize__item:hover .specialize__arrow .specialize__arrow_triangle {
+  .specialize__item:hover .specialize__arrow_triangle {
     stroke: #fff;
   }
 }
@@ -531,8 +531,8 @@
 }
 
 @media (max-width: 768px) {
-  #test-modal {
-    width: 100%;
+  #test-modal-2 {
+    width: 85%;
     height: 100%;
     position: fixed;
     left: 0;
@@ -542,15 +542,73 @@
     height: auto;
     border-radius: 0px;
   }
-  #test-modal .specialize__modal_img {
+  #test-modal-3 {
+    width: 85%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: auto;
     border-radius: 0px;
-    height: 50%;
   }
-  #test-modal .specialize__modal_desr {
-    overflow: scroll;
-    height: 150px;
+  #test-modal-4 {
+    width: 85%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    border-radius: 0px;
   }
-  #test-modal-2 {
+  #test-modal-5 {
+    width: 85%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    border-radius: 0px;
+  }
+  #test-modal-6 {
+    width: 85%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    border-radius: 0px;
+  }
+  #test-modal-7 {
+    width: 85%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    border-radius: 0px;
+  }
+  #test-modal-8 {
+    width: 85%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    border-radius: 0px;
+  }
+  #test-modal-10 {
     width: 85%;
     height: 100%;
     position: fixed;
