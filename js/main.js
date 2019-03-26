@@ -24,7 +24,7 @@ var swiper = new Swiper('.swiper-container', {
 
 
 $(document).ready(function(){
-  $(".about__menu").on("click",".undo1, .undo2, .undo3, .undo4, .undo5" , function (event) {
+  $(".about__menu").on("click","a[href*=#]",  function (event) {
       event.preventDefault();
       document.getElementById('mnr').checked=false;
       var id  = $(this).attr('href'),
