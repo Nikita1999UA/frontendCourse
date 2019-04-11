@@ -24,11 +24,14 @@ var swiper = new Swiper('.swiper-container', {
 
 
 $(document).ready(function(){
-  $(".about__menu").on("click","a[href*=#]",  function (event) {
-      event.preventDefault();
-      document.getElementById('mnr').checked=false;
-      var id  = $(this).attr('href'),
-          top = $(id).offset().top;
-      $('body,html').animate({scrollTop: top}, 1500);
-  });
+	$("a[href*=#]").on("click", function(e){
+        event.preventDefault();
+        document.getElementById('mnr').checked=false;
+		var anchor = $(this);
+		$('html, body').stop().animate({
+			scrollTop: $(anchor.attr('href')).offset().top
+		}, 1000);
+		e.preventDefault();
+		return false;
+	});
 });
